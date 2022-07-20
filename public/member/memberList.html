@@ -43,13 +43,13 @@
 		<nav class="container py-2">
 			<ul class="nav nav-tabs">
 				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="#">코드그룹관리</a>
+					<a class="nav-link" aria-current="page" href="#" style="color: black;">코드그룹관리</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#" style="color: black;">코드관리</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" style="color: black;">회원관리</a>
+					<a class="nav-link active" href="#" style="color: black;">회원관리</a>
 				</li>
 			</ul>
 		</nav>
@@ -107,7 +107,7 @@
 			</div>
 			<br>
 			<div class="container" style="margin: auto;">	
-				<table class="table table-responsive table-hover table-sm" style="text-align: center;">
+				<table class="table table-responsive table-hover table-sm" style="text-align: center;" id="tableTr">
 					<tr class="table-dark">
 						<th scope="col">
 							<input type="checkbox" class="form-check-input" onclick="selectAll(this)" name=check>
@@ -257,7 +257,7 @@
 					<button type="button" class="btn btn-outline-secondary" id="" onclick="location.href='memberRegForm_tr.html'">
 						<i class="fa-solid fa-plus"></i>
 					</button>
-					<button type="button" class="btn btn-outline-secondary" id="" onclick="location.href='memberList.html'">
+					<button type="button" class="btn btn-outline-secondary" id="" onclick='deleteRow()'>
 						<i class="fa-solid fa-trash-can"></i>	
 					</button>
 				</div>
@@ -294,6 +294,17 @@
 			checkbox.checked = selectAll.checked;
 		})
 	}
+		function deleteRow() {
+			var tableData = document.getElementById("tableTr");
+			
+			for(var i = 1; i < tableData.rows.length; i++) {
+				var checkbox=tableData.rows[i].cells[0].checked;
+				
+				if(checkbox){
+					tableData.deleteRow(i);
+				}
+			}
+		}
 	</script>
 </body>
 </html>
