@@ -33,7 +33,7 @@
 												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 											</div>
 										<div class="modal-body">
-												<span>아라비아</span>
+											<span>아라비아</span>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -66,7 +66,7 @@
 					<a class="nav-link" aria-current="page" href="#" style="color: black;">코드그룹관리</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="memberList.html" style="color: black;">코드관리</a>
+					<a class="nav-link" href="#" style="color: black;">코드관리</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link active" href="#" style="color: black;">회원관리</a>
@@ -98,7 +98,7 @@
 													<div class="col">
 														<div class="input-group">
 															<span class="input-group-text">이름</span>
-															<input type="text" class="form-control" id="mrgname" readonly>
+															<input type="text" class="form-control" id="mrgname">
 														</div>	
 													</div>
 												</div>
@@ -108,7 +108,7 @@
 													<div class="col">
 														<div class="input-group">
 															<span class="input-group-text">아이디</span>
-															<input type="text" class="form-control" id="mrgid" readonly>
+															<input type="text" class="form-control" id="mrgid">
 														</div>	
 													</div>
 												</div>
@@ -120,7 +120,7 @@
 													<div class="col">
 														<div class="input-group" id="basic-addon5">
 															<span class="input-group-text">이메일</span>
-															<input type="text" class="form-control" aria-describedby="basic-addon5" id="test" readonly>
+															<input type="text" class="form-control" aria-describedby="basic-addon5">
 														</div>	
 													</div>
 												</div>
@@ -131,10 +131,10 @@
 														<div class="input-group" id="basic-addon4">
 															<span class="input-group-text">@</span>
 															<select class="form-select">
-																<option disabled="disabled" value="1">::선택::</option>
-																<option disabled="disabled" value="2">naver.com</option>
-																<option disabled="disabled" value="3">gmail.com</option>
-																<option disabled="disabled" value="4">daum.net</option>
+																<option value="1">::선택::</option>
+																<option value="2">naver.com</option>
+																<option value="3">gmail.com</option>
+																<option value="4">daum.net</option>
 															</select>
 														</div>	
 													</div>
@@ -181,9 +181,9 @@
 													<div class="row">
 														<div class="col">
 															<select class="form-select">
-																<option disabled="disabled" value="1">::선택::</option>
-																<option disabled="disabled" value="2">남자</option>
-																<option disabled="disabled" value="3">여자</option>
+																<option value="1">::선택::</option>
+																<option value="2">남자</option>
+																<option value="3">여자</option>
 															</select>
 														</div>
 													</div>	
@@ -192,13 +192,13 @@
 													<div class="row">
 														<div class="col">
 															<select class="form-select">
-																<option disabled="disabled" value="1">::선택::</option>
-																<option disabled="disabled" value="2">학생</option>
-																<option disabled="disabled" value="3">공무원</option>
-																<option disabled="disabled" value="4">자영업자</option>
-																<option disabled="disabled" value="5">직장인</option>
-																<option disabled="disabled" value="6">전문직</option>
-																<option disabled="disabled" value="7">무직</option>
+																<option value="1">::선택::</option>
+																<option value="2">학생</option>
+																<option value="3">공무원</option>
+																<option value="4">자영업자</option>
+																<option value="5">직장인</option>
+																<option value="6">전문직</option>
+																<option value="7">무직</option>
 															</select>
 														</div>
 													</div>
@@ -224,7 +224,7 @@
 												<td>
 													<div class="row">
 														<div class="col">
-															<input type="text" class="form-control" readonly>
+															<input type="text" class="form-control">
 														</div>
 													</div>
 												</td>
@@ -232,14 +232,14 @@
 													<div class="row">
 														<div class="col-5">
 															<select class="form-select">
-																<option disabled="disabled" value="1">::선택::</option>
-																<option disabled="disabled" value="2">SKT</option>
-																<option disabled="disabled" value="3">KT</option>
-																<option disabled="disabled" value="4">LGT</option>
+																<option value="1">::선택::</option>
+																<option value="2">SKT</option>
+																<option value="3">KT</option>
+																<option value="4">LGT</option>
 															</select>
 														</div>
 														<div class="col">
-															<input type="text" class="form-control" placeholder="전화번호( '-'는 생략하십시오)" readonly>
+															<input type="text" class="form-control" placeholder="전화번호( '-'는 생략하십시오)">
 														</div>
 													</div>
 												</td>
@@ -259,7 +259,7 @@
 														<div class="col">
 															<div class="row">
 																<div class="col-7">
-																	<input type="text" class="form-control" placeholder="우편번호" readonly>
+																	<input type="text" class="form-control" placeholder="우편번호">
 																</div>
 																<div class="col">
 																	<div class="btn-group btn-group-sm py-1" role="group">
@@ -278,7 +278,7 @@
 												<td>
 													<div class="row">
 														<div class="col">
-															<input type="text" class="form-control" placeholder="상세주소" readonly>
+															<input type="text" class="form-control" placeholder="상세주소">
 														</div>
 													</div>
 												</td>
@@ -326,7 +326,7 @@
 			<br>
 			<div class="container">
 				<div style="text-align: center;">
-					<button type="button" class="btn btn-dark" onclick="">회원등록하기</button>
+					<button type="button" class="btn btn-dark" onclick="">수정하기</button>
 				</div>
 			</div>
 			
@@ -358,15 +358,5 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/188ea9a4c6.js" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-		window.onload = function() {
-			var e = document.forms;
-			for(i=0; i<e.length; i++){
-				for(j=0; j<e[i].elements.length; j++){
-					if(e[i].elements[j].readOnly) {e[i].elements[j].style.backgroundColor = "white";}
-				}	
-			}
-		}
-		</script>
 </body>
 </html>
