@@ -336,7 +336,8 @@
 
 		myModal.addEventListener('shown.bs.modal', () => {
 		  deleteInput.focus()
-		})
+		});
+	
 		$('#delRow').click(function(){
 			if($("input:checkbox[name='check']:checked").length === 0) {
 				alert("삭제할 항목을 선택해 주세요.");
