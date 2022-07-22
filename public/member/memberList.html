@@ -284,7 +284,7 @@
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+									<h5 class="modal-title" id="exampleModalLabel">회원정보 삭제</h5>
 									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
@@ -292,7 +292,7 @@
 								</div>
 								<div class="modal-footer">
         							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-        							<button type="button" class="btn btn-primary">삭제</button>
+        							<button type="button" class="btn btn-primary" onclick="delRow()">삭제</button>
       							</div>
     						</div>
   						</div>
@@ -331,15 +331,13 @@
 			checkbox.checked = selectAll.checked;
 		})
 	}
-		function deleteRow() {
-			var tableData = document.getElementById("tableTr");
+		function delRow() {
+			var maintable = document.getElementById('maintable');
+			var lastRow = maintable.rows.length;
 			
-			for(var i = 1; i < tableData.rows.length; i++) {
-				var checkbox=tableData.rows[i].cells[0].childNodes[0].checked;
-				
-				if(checkbox){
-					tableData.deleteRow(i);
-					i--;
+			for(var i = 1; i < lastRow; i++) {
+				if(document.getElementsByTagName("tr")[i].cell.checkbox.checked){
+					maintable.deleteRow(i);
 				}
 			}
 		}
