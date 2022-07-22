@@ -292,7 +292,7 @@
 								</div>
 								<div class="modal-footer">
         							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-        							<button type="button" class="btn btn-primary" onclick="delRow()">삭제</button>
+        							<button type="button" class="btn btn-primary" id="delRow">삭제</button>
       							</div>
     						</div>
   						</div>
@@ -331,22 +331,23 @@
 			checkbox.checked = selectAll.checked;
 		})
 	}
-		function delRow() {
-			var maintable = document.getElementById('maintable');
-			var lastRow = maintable.rows.length;
-			
-			for(var i = 1; i < lastRow; i++) {
-				if(document.getElementsByTagName("tr")[i].cell.checkbox.checked){
-					maintable.deleteRow(i);
-				}
-			}
-		}
 		const myModal = document.getElementById('deleteModal')
 		const myInput = document.getElementById('deleteInput')
 
 		myModal.addEventListener('shown.bs.modal', () => {
 		  deleteInput.focus()
 		})
+		$('#delRow').click(function(){
+			if($("input:checkbox[name='check']:checked").length === 0) {
+				alert("삭제할 항목을 선택해 주세요.");
+				return;
+			}
+			$("input:checkbox[name='check']:checked").each(function(k,kVal){
+				console.log("kVal ::", kVal.parentElement.parentElement);
+				let a = kVal.parentElemnet.parentElement.parentElement;
+				$(a).remove();
+			});
+		});
 	</script>
 </body>
 </html>
