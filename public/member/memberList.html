@@ -144,7 +144,7 @@
 						<th scope="col">가입일</th>
 					</tr>
 					<tbody>
-						<tr onclick="location.href='memberView.html'">
+						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
@@ -164,7 +164,7 @@
 							<td>동의</td>
 							<td>2022.05.25</td>
 						</tr>
-						<tr onclick="location.href='memberView.html'">
+						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
@@ -184,7 +184,7 @@
 							<td>동의</td>
 							<td>2022.07.01</td>
 						</tr>
-						<tr onclick="location.href='memberView.html'">
+						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
@@ -204,7 +204,7 @@
 							<td>미동의</td>
 							<td>2022.05.22</td>
 						</tr>
-						<tr onclick="location.href='memberView.html'">
+						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
@@ -224,7 +224,7 @@
 							<td>동의</td>
 							<td>2022.03.06</td>
 						</tr>
-						<tr onclick="location.href='memberView.html'">
+						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
@@ -277,9 +277,26 @@
 					<button type="button" class="btn btn-outline-secondary" id="" onclick="location.href='memberRegForm.html'">
 						<i class="fa-solid fa-plus"></i>
 					</button>
-					<button type="button" class="btn btn-outline-secondary" id="" onclick="delRow();">
-						<i class="fa-solid fa-trash-can"></i>	
+					<button type="button" class="btn btn-outline-secondary" id="deleteInput" data-bs-toggle="modal" data-bs-target="#deleteModal">
+						<i class="fa-solid fa-trash-can"></i>
 					</button>
+					<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<p>정말 삭제하시겠습니까?</p>	
+								</div>
+								<div class="modal-footer">
+        							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+        							<button type="button" class="btn btn-primary">삭제</button>
+      							</div>
+    						</div>
+  						</div>
+					</div>
 				</div>
 				<div class="btn-group me-2 btn-group-sm" role="group" style="float: left;">
 					<button type="button" class="btn btn-success" id="" onclick="location.href='memberList.html'" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="엑셀파일로 출력하기" >
@@ -326,6 +343,12 @@
 				}
 			}
 		}
+		const myModal = document.getElementById('deleteModal')
+		const myInput = document.getElementById('deleteInput')
+
+		myModal.addEventListener('shown.bs.modal', () => {
+		  deleteInput.focus()
+		})
 	</script>
 </body>
 </html>
