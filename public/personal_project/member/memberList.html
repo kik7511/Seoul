@@ -130,7 +130,7 @@
 				<table class="table table-responsive table-hover table-sm" style="text-align: center;" id="maintable">
 					<tr class="table-dark">
 						<th scope="col">
-							<input type="checkbox" class="form-check-input" onclick="selectAll(this)" name=check>
+							<input type="checkbox" class="form-check-input" onclick="selectAll(this);" name=check>
 						</th>
 						<th scope="col">NO</th>
 						<th scope="col">등급</th>
@@ -277,11 +277,11 @@
 					<button type="button" class="btn btn-outline-secondary" id="" onclick="location.href='memberRegForm.html'">
 						<i class="fa-solid fa-plus"></i>
 					</button>
-					<button type="button" class="btn btn-outline-secondary" id="deleteInput" data-bs-toggle="modal" data-bs-target="#deleteModal">
+					<button type="button" class="btn btn-outline-danger" id="deleteInput" data-bs-toggle="modal" data-bs-target="#deleteModal" onclick="getCheckboxValue()">
 						<i class="fa-solid fa-trash-can"></i>
 					</button>
 					<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
+						<div class="modal-dialog" id="result">
 							<div class="modal-content">
 								<div class="modal-header">
 									<h5 class="modal-title" id="exampleModalLabel">회원정보 삭제</h5>
@@ -292,7 +292,7 @@
 								</div>
 								<div class="modal-footer">
         							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-        							<button type="button" class="btn btn-primary" id="delRow">삭제</button>
+        							<button type="button" class="btn btn-danger" id="delRow">삭제</button>
       							</div>
     						</div>
   						</div>
@@ -349,6 +349,22 @@
 				$(a).remove();
 			});
 		});
+		function getCheckboxValue()  {
+		// 선택된 목록 가져오기
+			const query = 'input[name="check"]:checked';
+			const selectedEls = 
+			document.querySelectorAll(query);
+			  
+		// 선택된 목록에서 value 찾기
+			let result = '';
+			selectedEls.forEach((el) => {
+			result += el.value + ' ';
+			});
+			  
+		// 출력
+			document.getElementById('result').innerContent
+			= result;
+		}
 	</script>
 </body>
 </html>

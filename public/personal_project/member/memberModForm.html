@@ -12,7 +12,7 @@
 	<div>
 		<nav class="navbar bg-light sticky-top">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Member List</a>
+				<a class="navbar-brand" href="memberList.html">Member List</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -33,11 +33,27 @@
 												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 											</div>
 										<div class="modal-body">
-											<span>아라비아</span>
+											<div class="row">
+												<div class="col py-0">
+													<span>아이디</span>
+													<hr>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col">
+												</div>
+											</div>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Save changes</button>
+											<button type="button" class="btn btn-primary" onclick="" style="display: inline-block; margin: auto;">로그인</button>
 										</div>
 									</div>
 								</div>
@@ -257,26 +273,17 @@
 													</div>
 												</td>
 											</tr>
-											<tr style="border-color: white;">
-												<td>
-													<div class="row">
-														<div class="col">
-															<span>주소</span>
-														</div>
-													</div>
-												</td>
-											</tr>
 											<tr>
 												<td>
 													<div class="row">
 														<div class="col">
 															<div class="row">
 																<div class="col-7">
-																	<input type="text" class="form-control" placeholder="우편번호">
+																	<input type="text" class="form-control" placeholder="우편번호" id="sample6_postcode">
 																</div>
 																<div class="col">
 																	<div class="btn-group btn-group-sm py-1" role="group">
-																		<button type="button" class="btn btn-outline-secondary" id="" onclick="">
+																		<button type="button" class="btn btn-outline-secondary" id="" onclick="sample6_exeDaumPostcode()" value="우편번호 찾기">
 																			<i class="fa-solid fa-magnifying-glass"></i>
 																		</button>
 																		<button type="button" class="btn btn-outline-secondary" id="" onclick="">
@@ -288,10 +295,28 @@
 														</div>
 													</div>
 												</td>
+											</tr>
+											<tr>
 												<td>
 													<div class="row">
 														<div class="col">
-															<input type="text" class="form-control" placeholder="상세주소">
+															<input type="text" id="sample6_address" placeholder="주소" class="form-control">
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="row">
+														<div class="col">
+															<input type="text" id="sample6_detailAddress" placeholder="상세주소" class="form-control">
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="row">
+														<div class="col">
+															<input type="text" id="sample6_extraAddress" placeholder="참고항목" class="form-control">
 														</div>
 													</div>
 												</td>
