@@ -9,7 +9,7 @@
 		div {
 			display: block;
 		}
-		tr {
+		#cursor {
 			cursor: pointer;
 		}
 	</style>
@@ -143,7 +143,7 @@
 						<th scope="col">마케팅 동의여부</th>
 						<th scope="col">가입일</th>
 					</tr>
-					<tbody>
+					<tbody id="cursor">
 						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
