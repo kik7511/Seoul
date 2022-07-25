@@ -9,6 +9,9 @@
 		div {
 			display: block;
 		}
+		tr {
+			cursor: pointer;
+		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web/css/fontawesome.min.css">
 </head>
@@ -18,7 +21,7 @@
 	<div>
 		<nav class="navbar bg-light sticky-top">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Member List</a>
+				<a class="navbar-brand" href="memberList.html">Member List</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -124,7 +127,7 @@
 			</div>
 			<br>
 			<div class="container" style="margin: auto;">	
-				<table class="table table-responsive table-hover table-sm" style="text-align: center;" id="tableTr">
+				<table class="table table-responsive table-hover table-sm" style="text-align: center;" id="maintable">
 					<tr class="table-dark">
 						<th scope="col">
 							<input type="checkbox" class="form-check-input" onclick="selectAll(this)" name=check>
@@ -141,8 +144,8 @@
 						<th scope="col">가입일</th>
 					</tr>
 					<tbody>
-						<tr>
-							<td>
+						<tr onclick="location.href='memberModForm.html'">
+							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">1</th>
@@ -161,8 +164,8 @@
 							<td>동의</td>
 							<td>2022.05.25</td>
 						</tr>
-						<tr>
-							<td>
+						<tr onclick="location.href='memberModForm.html'">
+							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">2</th>
@@ -181,8 +184,8 @@
 							<td>동의</td>
 							<td>2022.07.01</td>
 						</tr>
-						<tr>
-							<td>
+						<tr onclick="location.href='memberModForm.html'">
+							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">3</th>
@@ -201,8 +204,8 @@
 							<td>미동의</td>
 							<td>2022.05.22</td>
 						</tr>
-						<tr>
-							<td>
+						<tr onclick="location.href='memberModForm.html'">
+							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">4</th>
@@ -221,8 +224,8 @@
 							<td>동의</td>
 							<td>2022.03.06</td>
 						</tr>
-						<tr>
-							<td>
+						<tr onclick="location.href='memberModForm.html'">
+							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">5</th>
@@ -271,12 +274,29 @@
 			</div>
 			<div class="container">
 				<div class="btn-group me-2 btn-group-sm" role="group" style="float:  right;">
-					<button type="button" class="btn btn-outline-secondary" id="" onclick="location.href='memberRegForm_tr.html'">
+					<button type="button" class="btn btn-outline-secondary" id="" onclick="location.href='memberRegForm.html'">
 						<i class="fa-solid fa-plus"></i>
 					</button>
-					<button type="button" class="btn btn-outline-secondary" id="" onclick='deleteRow()'>
-						<i class="fa-solid fa-trash-can"></i>	
+					<button type="button" class="btn btn-outline-secondary" id="deleteInput" data-bs-toggle="modal" data-bs-target="#deleteModal">
+						<i class="fa-solid fa-trash-can"></i>
 					</button>
+					<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">회원정보 삭제</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<p>정말 삭제하시겠습니까?</p>	
+								</div>
+								<div class="modal-footer">
+        							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+        							<button type="button" class="btn btn-primary" id="delRow">삭제</button>
+      							</div>
+    						</div>
+  						</div>
+					</div>
 				</div>
 				<div class="btn-group me-2 btn-group-sm" role="group" style="float: left;">
 					<button type="button" class="btn btn-success" id="" onclick="location.href='memberList.html'" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="엑셀파일로 출력하기" >
@@ -311,17 +331,24 @@
 			checkbox.checked = selectAll.checked;
 		})
 	}
-		function deleteRow() {
-			var tableData = document.getElementById("tableTr");
-			
-			for(var i = 1; i < tableData.rows.length; i++) {
-				var checkbox=tableData.rows[i].cells[0].checked;
-				
-				if(checkbox){
-					tableData.deleteRow(i);
-				}
+		const myModal = document.getElementById('deleteModal')
+		const myInput = document.getElementById('deleteInput')
+
+		myModal.addEventListener('shown.bs.modal', () => {
+		  deleteInput.focus()
+		});
+	
+		$('#delRow').click(function(){
+			if($("input:checkbox[name='check']:checked").length === 0) {
+				alert("삭제할 항목을 선택해 주세요.");
+				return;
 			}
-		}
+			$("input:checkbox[name='check']:checked").each(function(k,kVal){
+				console.log("kVal ::", kVal.parentElement.parentElement);
+				let a = kVal.parentElemnet.parentElement.parentElement;
+				$(a).remove();
+			});
+		});
 	</script>
 </body>
 </html>
