@@ -9,12 +9,40 @@
 		div {
 			display: block;
 		}
+		.wrap {
+			margin: auto;
+			display: flex;
+			border: 1px solid;
+		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web/css/fontawesome.min.css">
 </head>
 <body>
 
 <!-- start -->
+
+	<div class="wrap">
+        <div class="login">
+            <h2>Log-in</h2>
+            <div class="login_id">
+                <h4>아이디</h4>
+                <input type="email" name="" id="" placeholder="Email">
+            </div>
+            <div class="login_pw">
+                <h4>비밀번호</h4>
+                <input type="password" name="" id="" placeholder="Password">
+            </div>
+            <div class="login_etc">
+                <div class="form-check form-switch">
+	                <input type="checkbox" name="" id="saveId" class="form-check-input" role="switch">
+	                <label class="form-check-label" for="saveId"> 아이디 저장</label>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="로그인">
+            </div>
+        </div>
+    </div>
 
 <!-- end -->
 

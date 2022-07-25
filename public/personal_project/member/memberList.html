@@ -323,6 +323,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/188ea9a4c6.js" crossorigin="anonymous"></script>	
 	<script type="text/javascript">
+		/* 체크박스 전체 선택 */
 		function selectAll(selectAll){
 			const checkboxes 
 				= document.getElementsByName("check");
@@ -331,13 +332,14 @@
 			checkbox.checked = selectAll.checked;
 		})
 	}
+		/* 모달 나타나기 */
 		const myModal = document.getElementById('deleteModal')
 		const myInput = document.getElementById('deleteInput')
 
 		myModal.addEventListener('shown.bs.modal', () => {
 		  deleteInput.focus()
 		});
-	
+		/* 체크된 줄만 지우기(현재 실패) */
 		$('#delRow').click(function(){
 			if($("input:checkbox[name='check']:checked").length === 0) {
 				alert("삭제할 항목을 선택해 주세요.");
@@ -349,22 +351,6 @@
 				$(a).remove();
 			});
 		});
-		function getCheckboxValue()  {
-		// 선택된 목록 가져오기
-			const query = 'input[name="check"]:checked';
-			const selectedEls = 
-			document.querySelectorAll(query);
-			  
-		// 선택된 목록에서 value 찾기
-			let result = '';
-			selectedEls.forEach((el) => {
-			result += el.value + ' ';
-			});
-			  
-		// 출력
-			document.getElementById('result').innerContent
-			= result;
-		}
 	</script>
 </body>
 </html>
