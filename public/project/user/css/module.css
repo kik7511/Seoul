@@ -2766,17 +2766,17 @@ div[class^="sect-"] .btn-itemmore{ margin-top:30px;}
 .wrap-login{ position:relative;padding:30px 30px 0;}
 .wrap-login h3{height:auto;margin:0;background:none;line-height:1.2;text-align:left; color:#222222; font-size:15px;}
 .wrap-login h3 >  strong{ color:#fb4357;}
-.sect-login{ width:541px; }
+.sect-login{ width:920px; }
 .wrap-login .tab-menu-round > li{ width:100px;}
 
 /* S [U20201223] 네이버 로그인 버튼추가
 	Description:
 	- 기존코드
-	.box-login{padding:70px 0 0 132px; border-bottom:2px solid #898987;padding-top:50px;height: 246px;}
+	.box-login{padding:70px 0 0 132px; border-bottom:2px solid #898987;padding-top:50px;height: 246px; border-top:2px solid #898987; }
 	- 추가
 	.btn_loginNaver{display:inline-block; margin-top:35px;}
 */
-.box-login{padding:30px 0 0 132px; border-bottom:2px solid #898987; height: 266px;}
+.box-login{padding:50px 0 0 132px; border-bottom:2px solid #898987; border-top:2px solid #898987 ; height: 266px;}
 .btn_loginNaver{display:inline-block; margin-top:35px;}
 
 /* E [U20201223] 네이버 로그인 버튼추가 */
