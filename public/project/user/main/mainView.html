@@ -5,14 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>영화 그 이상의 감동. CGV</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<style type="text/css">
-		div {
-			display: block;
-		}
-		ol, ul{
-			list-style : none;
-		}
-	</style>
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web/css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../css/content.css">
@@ -103,7 +95,6 @@
                         <source src="../img/hansan_1080x608.mp4" type="video/mp4">
                         이 브라우저는 Video 태그를 지원하지 않습니다. (Your browser does not support the video tag.)
                     </video>
-                    
                         <strong id="ctl00_PlaceHolderContent_AD_MOVIE_NM" class="movieSelection_title">한산: 용의 출현</strong>
                         <span id="ctl00_PlaceHolderContent_AD_DESCRIPTION_NM" class="movieSelection_txt">나라의 운명을 바꾼 압도적 승리!<br>7월 27일 대개봉!</span>
                         <div class="movieSelection_video_controller_wrap">
@@ -112,8 +103,7 @@
                             <!-- 시작/소리 버튼 -->
                             <a href="#none" id="ctl00_PlaceHolderContent_playStop" class="btn_movieSelection_playStop">Stop</a>
                             <a href="#none" id="ctl00_PlaceHolderContent_soundOnOff" class="btn_movieSelection_soundOnOff">Sound On</a>
-
-                            <input name="ctl00$PlaceHolderContent$AD_CNT_URL" type="hidden" id="ctl00_PlaceHolderContent_AD_CNT_URL" value="http://ad.cgv.co.kr/NetInsight/imp/CGV/CGV_201401/main@MovieSelection2021?ads_id%3d47355%26creative_id%3d66606">
+                            <input name="ctl00$PlaceHolderContent$AD_CNT_URL" type="hidden" id="ctl00_PlaceHolderContent_AD_CNT_URL" value="">
                         </div>
                     </div>
                 </div>
@@ -129,9 +119,9 @@
                     </div>
 
                     <div class="swiper movieChart_list swiper-container-initialized swiper-container-horizontal" id="movieChart_list">
-                        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="swiper-wrapper" style="transform: translate3d(-2833.6px, 0px, 0px); transition-duration: 0ms;">
                             
-                                <div class="swiper-slide swiper-slide-movie swiper-slide-active" style="width: 170.4px; margin-right: 32px;">
+                                <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
                                     <div class="img_wrap" data-scale="false">
                                         <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85997/85997_320.jpg" alt="외계+인 1부" onerror="errorImage(this)">
                                         <div class="movieAgeLimit_wrap">
@@ -161,7 +151,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="swiper-slide swiper-slide-movie swiper-slide-next" style="width: 170.4px; margin-right: 32px;">
+                                <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
                                     <div class="img_wrap" data-scale="false">
                                         <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000083/83127/83127_320.jpg" alt="미니언즈2" onerror="errorImage(this)">
                                         <div class="movieAgeLimit_wrap">
@@ -487,7 +477,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                                <div class="swiper-slide swiper-slide-movie swiper-slide-prev" style="width: 170.4px; margin-right: 32px;">
                                     <div class="img_wrap" data-scale="false">
                                         <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85991/85991_320.jpg" alt="뒤틀린 집" onerror="errorImage(this)">
                                         <div class="movieAgeLimit_wrap">
@@ -513,7 +503,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                                <div class="swiper-slide swiper-slide-movie swiper-slide-active" style="width: 170.4px; margin-right: 32px;">
                                     <div class="img_wrap" data-scale="false">
                                         <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85950/85950_320.jpg" alt="엘비스" onerror="errorImage(this)">
                                         <div class="movieAgeLimit_wrap">
@@ -541,7 +531,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                                <div class="swiper-slide swiper-slide-movie swiper-slide-next" style="width: 170.4px; margin-right: 32px;">
                                     <div class="img_wrap" data-scale="false">
                                         <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85988/85988_320.jpg" alt="로스트 도터" onerror="errorImage(this)">
                                         <div class="movieAgeLimit_wrap">
@@ -648,8 +638,8 @@
 
                         </div>
 
-                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="다음 슬라이드" aria-disabled="false"></div>
-                        <div class="swiper-button-prev swiper-button-disabled" tabindex="0" role="button" aria-label="이전 슬라이드" aria-disabled="true"></div>
+                        <div class="swiper-button-next swiper-button-disabled" tabindex="0" role="button" aria-label="다음 슬라이드" aria-disabled="true"></div>
+                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="이전 슬라이드" aria-disabled="false"></div>
                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 
                     <div class="swiper movieChart_list swiper-container-initialized swiper-container-horizontal" id="movieChart_list_Reser" style="display: none;">
@@ -1191,15 +1181,192 @@
                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 
                 </div>
-            </div>		 
-		</div>
-		<div></div>
-		<div></div>
-		<!-- footer -->
-		<div></div>
+            </div>
+<!-- E > 무비차트 | 상영예정작 -->
+<!-- S > EVENT -->
+            <div id="ctl00_PlaceHolderContent_event_wrap" class="event_wrap">
+                <div class="contents">
+                <div class="event_title_wrap">
+                    <h3>EVENT</h3>
+                    <a href="/culture-event/event/defaultNew.aspx" id="btn_allView_Event" class="btn_allView">전체보기</a>
+                    <a href="#none" class="btn_eventControl active">playStop</a>
+                </div>
+                <div class="event_list_wrap">
+                    <div class="swiper event_list swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                        
+                                 <div class="swiper-slide swiper-slide-active" style="width: 310.667px; margin-right: 24px;">
+                                    <a onclick="gaEventLog('PC_메인', '이벤트', '씨지밤  VIP 인센티브');" href="/culture-event/event/detailViewUnited.aspx?seq=34804">
+                                        <div class="img_wrap"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34804/16576736191670.jpg" alt="씨지밤  VIP 인센티브" onerror="errorImage(this)"></div>
+                                        <strong>씨지밤  VIP 인센티브</strong>
+                                        <span>2022.07.13~2022.08.31</span>
+                                    </a>
+                                </div>
+                            
+                                 <div class="swiper-slide swiper-slide-next" style="width: 310.667px; margin-right: 24px;">
+                                    <a onclick="gaEventLog('PC_메인', '이벤트', '[비상선언] 사전예매하고 스페셜 필름마크 받자!');" href="/culture-event/event/detailViewUnited.aspx?seq=34890">
+                                        <div class="img_wrap"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34890/16577003018730.jpg" alt="[비상선언] 사전예매하고 스페셜 필름마크 받자!" onerror="errorImage(this)"></div>
+                                        <strong>[비상선언] 사전예매하고 스페셜 필름마크 받자!</strong>
+                                        <span>2022.07.14~2022.07.24</span>
+                                    </a>
+                                </div>
+                            
+                                 <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
+                                    <a onclick="gaEventLog('PC_메인', '이벤트', '[엘비스]CGV 필름마크');" href="/culture-event/event/detailViewUnited.aspx?seq=34844">
+                                        <div class="img_wrap"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34844/16570831118770.jpg" alt="[엘비스]CGV 필름마크" onerror="errorImage(this)"></div>
+                                        <strong>[엘비스]CGV 필름마크</strong>
+                                        <span>2022.07.06~2022.07.31</span>
+                                    </a>
+                                </div>
+                            
+                                 <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
+                                    <a onclick="gaEventLog('PC_메인', '이벤트', '[토르: 러브 앤 썬더]PET 북마크');" href="/culture-event/event/detailViewUnited.aspx?seq=34922">
+                                        <div class="img_wrap"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34922/16581234608560.jpg" alt="[토르: 러브 앤 썬더]PET 북마크" onerror="errorImage(this)"></div>
+                                        <strong>[토르: 러브 앤 썬더]PET 북마크</strong>
+                                        <span>2022.07.18~2022.08.14</span>
+                                    </a>
+                                </div>
+                            
+                                 <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
+                                    <a onclick="gaEventLog('PC_메인', '이벤트', '[토르: 러브 앤 썬더]필름마크');" href="/culture-event/event/detailViewUnited.aspx?seq=34859">
+                                        <div class="img_wrap"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34859/16572570587010.jpg" alt="[토르: 러브 앤 썬더]필름마크" onerror="errorImage(this)"></div>
+                                        <strong>[토르: 러브 앤 썬더]필름마크</strong>
+                                        <span>2022.07.08~2022.07.31</span>
+                                    </a>
+                                </div>
+                            
+                                 <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
+                                    <a onclick="gaEventLog('PC_메인', '이벤트', '[토르:러브앤썬더]SX 3D 랜티큘러 굿즈 이벤트');" href="/culture-event/event/detailViewUnited.aspx?seq=34874">
+                                        <div class="img_wrap"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34874/16575200897590.jpg" alt="[토르:러브앤썬더]SX 3D 랜티큘러 굿즈 이벤트" onerror="errorImage(this)"></div>
+                                        <strong>[토르:러브앤썬더]SX 3D 랜티큘러 굿즈 이벤트</strong>
+                                        <span>2022.07.11~2022.07.26</span>
+                                    </a>
+                                </div>
+                            
+                                 <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
+                                    <a onclick="gaEventLog('PC_메인', '이벤트', '[토르: 러브 앤 썬더]IMAX 포스터 증정');" href="/culture-event/event/detailViewUnited.aspx?seq=34873">
+                                        <div class="img_wrap"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34873/16575192824350.jpg" alt="[토르: 러브 앤 썬더]IMAX 포스터 증정" onerror="errorImage(this)"></div>
+                                        <strong>[토르: 러브 앤 썬더]IMAX 포스터 증정</strong>
+                                        <span>2022.07.11~2022.07.24</span>
+                                    </a>
+                                </div>
+                            
+                                 <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
+                                    <a onclick="gaEventLog('PC_메인', '이벤트', '[외계+인] 1부필름마크');" href="/culture-event/event/detailViewUnited.aspx?seq=34889">
+                                        <div class="img_wrap"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34889/16576988925950.jpg" alt="[외계+인] 1부필름마크" onerror="errorImage(this)"></div>
+                                        <strong>[외계+인] 1부필름마크</strong>
+                                        <span>2022.07.13~2022.08.07</span>
+                                    </a>
+                                </div>
+                            
+                                 <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
+                                    <a onclick="gaEventLog('PC_메인', '이벤트', '[미니언즈2]필름마크');" href="/culture-event/event/detailViewUnited.aspx?seq=34888">
+                                        <div class="img_wrap"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34888/16576988380790.jpg" alt="[미니언즈2]필름마크" onerror="errorImage(this)"></div>
+                                        <strong>[미니언즈2]필름마크</strong>
+                                        <span>2022.07.13~2022.08.07</span>
+                                    </a>
+                                </div>
+                            
+                                 <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
+                                    <a onclick="gaEventLog('PC_메인', '이벤트', '[한산: 용의 출현]필름마크');" href="/culture-event/event/detailViewUnited.aspx?seq=34934">
+                                        <div class="img_wrap"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34934/16582934110940.jpg" alt="[한산: 용의 출현]필름마크" onerror="errorImage(this)"></div>
+                                        <strong>[한산: 용의 출현]필름마크</strong>
+                                        <span>2022.07.20~2022.08.14</span>
+                                    </a>
+                                </div>
+                            
+                       
+                        
+                    </div>
+                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="다음 슬라이드" aria-disabled="false"></div>
+                    <div class="swiper-button-prev swiper-button-disabled" tabindex="0" role="button" aria-label="이전 슬라이드" aria-disabled="true"></div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                </div>
+                </div>
+            </div>
+<!-- E > EVENT -->
+<!-- S > 공지사항 & 고객센터 -->
+            <div class="noticeClient_wrap">
+                <div class="contents">
+                    <div class="noticeClient_container">
+                        <div class="noticeClient_content">
+                            
+                            <div id="ctl00_PlaceHolderContent_notice_wrap" class="notice_wrap">
+                                <strong>공지사항</strong>
+                                    <a href="/support/news/detail-view.aspx?idx=7856" class="btn_link">[기타]22년 VIP 선정 기준 변경 및 추가 기준 관련 안내</a>
+                            </div>
+
+                            <div class="client_wrap">
+                                <dl class="client_list">
+                                    <dt><strong>고객센터</strong></dt>
+                                    <dd>
+                                        <strong>1544-1122</strong>
+                                        <span>고객센터 운영시간 (평일 09:00~18:00)
+                                        <p>업무시간 외 자동응답 안내 가능합니다.</p>
+                                    </span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="qr_wrap">
+                            <strong>앱 다운로드</strong>
+                            <span>CGV앱에서 더 편리하게 이용하세요</span>
+                            <div class="img_wrap" data-scale="false"><img src="https://img.cgv.co.kr/R2014/images/common/img_qrcode.gif" alt="QR CODE"></div>
+                            <p>QR코드를 스캔하고<br>앱설치 페이지로 바로 이동하세요</p>
+                        </div>
+                    </div>
+                    <div class="noticeClient_banner_wrap">
+
+                        <!-- <div class="event_list_wrap"> -->
+                        <div class="swiper noticeClient_banner_list swiper-container-initialized swiper-container-horizontal">
+                            <div class="swiper-wrapper" style="transform: translate3d(-211px, 0px, 0px); transition-duration: 300ms;">
+                                <div class="swiper-slide swiper-slide-prev" style="width: 211px;">
+                                    <a id="bannerType1" href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=33721&amp;menu=006"><img src="https://img.cgv.co.kr/Front/Main/2021/1227/16405823683780.png" alt="카카오페이카드"></a>
+                                </div>
+                               
+                                    <div class="swiper-slide swiper-slide-active" style="width: 211px;">
+                                        <iframe src="https://ad.cgv.co.kr/NetInsight/html/CGV/CGV_201401/main@Branding" width="226" height="259" title="" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" name="Branding" id="Branding"></iframe>
+                                    </div>
+                                
+                            </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                        <a href="#none" class="btn_noticeClientBannerControl active">playStop</a>
+                    </div>
+                </div>
+            </div>
+<!-- E > 공지사항 & 고객센터 -->
 	</div>
-
+    <!-- E Contaniner -->
+    <!-- S Footer -->
+    <footer>
+		<!-- footer_area (s) -->
+		
+		<div id="BottomWrapper" class="sect-ad">
+    		<iframe src="https://ad.cgv.co.kr/NetInsight/html/CGV/CGV_201401/main@Bottom" width="100%" height="240" title="" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" name="Bottom" id="Bottom"></iframe>
+		</div>
+		<article class="company_info_wrap">
+    		<section class="company_info">
+        		<address>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</address>
+        		<dl class="company_info_list">
+            		<dt>대표이사</dt>
+            		<dd>허민회</dd>
+            		<dt>사업자등록번호</dt>
+            		<dd>104-81-45690</dd>
+            		<dt>통신판매업신고번호</dt>
+            		<dd>2017-서울용산-0662 <a href="#none" onclick="goFtc()" class="btn_goFtc">사업자정보확인</a><a></a></dd>
+        		</dl>
+        		<dl class="company_info_list">
+            		<dt>호스팅사업자</dt>
+            		<dd>CJ올리브네트웍스</dd>
+            		<dt>개인정보보호 책임자</dt>
+            		<dd>심준범</dd>
+            		<dt>대표이메일</dt>
+            		<dd>cjcgvmaster@cj.net</dd>
+            
+        		</dl>
+        		<p class="copyright">© CJ CGV. All Rights Reserved</p>
+    		</section>
+		</article>
+	</footer>
 <!-- end -->
-
 </body>
 </html>
