@@ -308,7 +308,7 @@ iframe#TopBanner {margin: 0 auto;display:block}
 ============================================ */
 #contaniner {/*overflow:hidden;*/ position:relative; width:100%; z-index:7}
 #contaniner.bg-bricks {background:url(https://img.cgv.co.kr/r2014/images/common/bg/bg_c_bricks.png) repeat-x 0 29px}
-#contaniner .contents{width:950px; height:100%; margin:0 auto}
+#contaniner .contents{width:980px; height:100%; margin:0 auto}
 
 
 

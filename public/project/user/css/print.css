@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#footer, #header .im-wrap, #header .sect-service, #scroll-top, .cgv-ad-wrap{display:none!important}
+#footer, #header .im-wrap, #header .sect-service, #scroll-top{display:none!important}
 #header h1{position:static;display:block;width:auto!important;height:auto!important;padding-bottom:15px!important;margin-bottom:15px!important;border-bottom:2px solid #000}
 #header h1>a{display:block}
 #viewgrade, .company-wrap.cj:before, .linemap-wrap, .sect-aside-banner, .skipnaiv{display:none}

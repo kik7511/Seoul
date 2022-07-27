@@ -2133,9 +2133,9 @@ div.scrollbox {overflow-y:auto;}
 	.movieChart_list .swiper-wrapper .swiper-slide .movie_info_wrap > span img{width:16px; height:16px; vertical-align:top}
 
 	.movieChart_list .swiper-button-prev{overflow:hidden; left:-20px; top:calc(50% - 26px); width:40px; height:40px; margin-top:-20px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2)}
-	.movieChart_list .swiper-button-prev:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat}
+	.movieChart_list .swiper-button-prev:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat}
 	.movieChart_list .swiper-button-next{overflow:hidden; right:-20px; top:calc(50% - 26px); width:40px; height:40px; margin-top:-20px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2)}
-	.movieChart_list .swiper-button-next:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
+	.movieChart_list .swiper-button-next:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
 	.movieChart_list .swiper-button-disabled{display:none}
 
 /* E COMMON */
@@ -2187,9 +2187,9 @@ div.scrollbox {overflow-y:auto;}
 	.event_title_wrap{position:relative; align-items:center; justify-content:space-between}
 	.event_title_wrap:after{content:''; clear:both; display:block; font-size:0; line-height:0}
 	.event_title_wrap h3{float:left; height:auto; margin:0; font-weight:700; font-size:26px; color:#222; line-height:1.423em; background-image:none}
-	.event_title_wrap .btn_allView{float:right; margin-top:4px; padding:4px 32px 4px 15px; font-size:14px; color:#222; line-height:1.429em; background:transparent url('./../images/common/ico/arrowR_8x13.png') calc(100% - 7px) center/8px 13px scroll no-repeat; border:1px solid #e2e2e2; border-radius:15px; box-shadow:1px 1px 1px 0 rgba(0, 0, 0, 0.05)}
-	.event_title_wrap .btn_eventControl{display:block; position:absolute; right:106px; top:4px; width:28px; height:28px; font-size:0; background:transparent url('./../images/common/ico/main/play.png') 10px center/11px 15px scroll no-repeat; border:1px solid #e3e3e3; border-radius:50%}
-	.event_title_wrap .btn_eventControl.active{background:transparent url('./../images/common/ico/main/stop.png') center center/9px 13px scroll no-repeat}
+	.event_title_wrap .btn_allView{float:right; margin-top:4px; padding:4px 32px 4px 15px; font-size:14px; color:#222; line-height:1.429em; background:transparent url('../img/arrowR_8x13.png') calc(100% - 7px) center/8px 13px scroll no-repeat; border:1px solid #e2e2e2; border-radius:15px; box-shadow:1px 1px 1px 0 rgba(0, 0, 0, 0.05)}
+	.event_title_wrap .btn_eventControl{display:block; position:absolute; right:106px; top:4px; width:28px; height:28px; font-size:0; background:transparent url('../img/play.png') 10px center/11px 15px scroll no-repeat; border:1px solid #e3e3e3; border-radius:50%}
+	.event_title_wrap .btn_eventControl.active{background:transparent url('../img/stop.png') center center/9px 13px scroll no-repeat}
 
 	.event_list_wrap{overflow:hidden; position:relative; width:100%; margin-top:19px; margin-left:-30px; padding:0 30px}
 	.event_list_wrap .event_list{overflow:visible; position:relative}
@@ -2200,16 +2200,16 @@ div.scrollbox {overflow-y:auto;}
 	.event_list_wrap .event_list .swiper-wrapper .swiper-slide a strong{display:block; overflow:hidden; margin-top:16px; font-weight:500; font-size:18px; color:#222; line-height:1.444em; text-overflow:ellipsis; white-space:nowrap}
 	.event_list_wrap .event_list .swiper-wrapper .swiper-slide a span{display:block; margin-top:4px; font-size:14px; color:#666; line-height:1.429em}
 	.event_list_wrap .swiper-button-prev{overflow:hidden; left:-20px; top:calc(50% - 26px); width:40px; height:40px; margin-top:-20px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2)}
-	.event_list_wrap .swiper-button-prev:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat}
+	.event_list_wrap .swiper-button-prev:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat}
 	.event_list_wrap .swiper-button-next{overflow:hidden; right:-20px; top:calc(50% - 26px); width:40px; height:40px; margin-top:-20px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2)}
-	.event_list_wrap .swiper-button-next:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
+	.event_list_wrap .swiper-button-next:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
 	.event_list_wrap .swiper-button-disabled{display:none}
 
 /* S > 특별관 */
 .specialHall_wrap{padding:60px 0 21px}
 	.specialHall_title_wrap{display:flex; align-items:center; justify-content:space-between}
 	.specialHall_title_wrap h3{height:auto; margin:0; font-weight:700; font-size:26px; color:#222; line-height:1.423em; background-image:none}
-	.specialHall_title_wrap .btn_allView{padding:4px 32px 4px 15px; font-size:14px; color:#222; line-height:1.429em; background:transparent url('./../images/common/ico/arrowR_8x13.png') calc(100% - 7px) center/8px 13px scroll no-repeat; border:1px solid #e2e2e2; border-radius:15px; box-shadow:1px 1px 1px 0 rgba(0, 0, 0, 0.05)}
+	.specialHall_title_wrap .btn_allView{padding:4px 32px 4px 15px; font-size:14px; color:#222; line-height:1.429em; background:transparent url('../img/arrowR_8x13.png') calc(100% - 7px) center/8px 13px scroll no-repeat; border:1px solid #e2e2e2; border-radius:15px; box-shadow:1px 1px 1px 0 rgba(0, 0, 0, 0.05)}
 		.specialHall_content{display:flex; justify-content:space-between; margin-top:19px}
 		.specialHall_content > a{display:block; overflow:hidden; width:500px; border-radius:10px}
 		.specialHall_content > a .img_wrap{width:100%; height:100%}
@@ -2276,8 +2276,8 @@ div.scrollbox {overflow-y:auto;}
 	.noticeClient_banner_wrap .noticeClient_banner_list .swiper-wrapper .swiper-slide a img{width:100%}
 
 
-	.noticeClient_banner_wrap .btn_noticeClientBannerControl{display:block; position:absolute; right:10px; bottom:10px; width:28px; height:28px; font-size:0; background:#fff url('./../images/common/ico/main/play.png') 10px center/11px 15px scroll no-repeat; border:1px solid #e3e3e3; border-radius:50%; z-index:2}
-	.noticeClient_banner_wrap .btn_noticeClientBannerControl.active{background:#fff url('./../images/common/ico/main/stop.png') center center/9px 13px scroll no-repeat}
+	.noticeClient_banner_wrap .btn_noticeClientBannerControl{display:block; position:absolute; right:10px; bottom:10px; width:28px; height:28px; font-size:0; background:#fff url('../img/play.png') 10px center/11px 15px scroll no-repeat; border:1px solid #e3e3e3; border-radius:50%; z-index:2}
+	.noticeClient_banner_wrap .btn_noticeClientBannerControl.active{background:#fff url('../img/stop.png') center center/9px 13px scroll no-repeat}
 /* E Main */
 
 
@@ -2569,9 +2569,9 @@ div.scrollbox {overflow-y:auto;}
 
 			.specialMovie_detail_inner_wrap > strong{display:block; width:100%; margin-bottom:41px; font-weight:300; font-size:2em; color:#000; letter-spacing:-0.020em; line-height:1.462em; text-align:center}
 			.specialMovie_detail_inner_wrap .swiper-button-prev{overflow:hidden; left:-20px; top:50%; width:40px; height:40px; margin-top:-14px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2)}
-			.specialMovie_detail_inner_wrap .swiper-button-prev:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat}
+			.specialMovie_detail_inner_wrap .swiper-button-prev:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat}
 			.specialMovie_detail_inner_wrap .swiper-button-next{overflow:hidden; right:-20px; top:50%; width:40px; height:40px; margin-top:-14px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2)}
-			.specialMovie_detail_inner_wrap .swiper-button-next:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
+			.specialMovie_detail_inner_wrap .swiper-button-next:after{content:''; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
 			.specialMovie_detail_inner_wrap .swiper-button-disabled{display:none}
 
 		/* S >> 이벤트 영역 */
@@ -2586,9 +2586,9 @@ div.scrollbox {overflow-y:auto;}
 		.specialtheater_detail_event_list_wrap .specialtheater_detail_event_list .swiper-wrapper .swiper-slide a strong{display:block; overflow:hidden; margin-top:16px; font-weight:500; font-size:18px; color:#222; line-height:1.444em; text-overflow:ellipsis; white-space:nowrap}
 		.specialtheater_detail_event_list_wrap .specialtheater_detail_event_list .swiper-wrapper .swiper-slide a span{display:block; margin-top:4px; font-size:14px; color:#666; line-height:1.429em}
 		.specialtheater_detail_event_list_wrap .event-button-prev{overflow:hidden; position:absolute; left:-20px; top:calc(50% - 26px); width:40px; height:40px; margin-top:-20px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2); z-index:10}
-		.specialtheater_detail_event_list_wrap .event-button-prev:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat}
+		.specialtheater_detail_event_list_wrap .event-button-prev:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat}
 		.specialtheater_detail_event_list_wrap .event-button-next{overflow:hidden; position:absolute; right:-20px; top:calc(50% - 26px); width:40px; height:40px; margin-top:-20px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2); z-index:10}
-		.specialtheater_detail_event_list_wrap .event-button-next:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
+		.specialtheater_detail_event_list_wrap .event-button-next:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
 		.specialtheater_detail_event_list_wrap .swiper-button-disabled{display:none}
 
 		.specialtheater_detail_event_list_wrap .specialtheater_detail_event_list.noneSlider{width:100%}
@@ -2753,7 +2753,7 @@ div.scrollbox {overflow-y:auto;}
 		.searchingMovieResult_list li.noData strong mark{font-weight:700; color:#fb4357; background-color:transparent}
 		.searchingMovieResult_list li.noData span{display:block; margin-top:13px; font-size:20px; color:#444; line-height:1.450em}
 		.searchingMovieResult_list li.noData p{display:flex; justify-content:center; align-items:baseline; margin-top:31px; padding-top:21px; border-top:1px solid rgba(216, 216, 216, 0.7)}
-		.searchingMovieResult_list li.noData p a{margin-left:19px; padding:1px 16px 1px 10px; font-size:14px; line-height:1.429em; background:transparent url('./../images/common/ico/arrowR_6x10.png') calc(100% - 7px) center/6px 10px scroll no-repeat; border:1px solid #d7d7d7; border-radius:5px}
+		.searchingMovieResult_list li.noData p a{margin-left:19px; padding:1px 16px 1px 10px; font-size:14px; line-height:1.429em; background:transparent url('../img/arrowR_8x13.png') calc(100% - 7px) center/6px 10px scroll no-repeat; border:1px solid #d7d7d7; border-radius:5px}
 
 /* S > 인물검색 결과 */
 		.searchingPeopleResult_wrap{margin-top:66px; border-top:1px solid rgba(216, 216, 216, 0.7)}
@@ -2777,9 +2777,9 @@ div.scrollbox {overflow-y:auto;}
 		.searchingPeopleResult_list_wrap > .searchingPeopleResult_list .swiper-wrapper .swiper-slide.active a .actor_name_en{color:#222}
 
 		.searchingPeopleResult_list_wrap .swiper-button-prev{overflow:hidden; left:-20px; top:calc(50% + 4px); width:40px; height:40px; margin-top:-20px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2)}
-		.searchingPeopleResult_list_wrap .swiper-button-prev:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat}
+		.searchingPeopleResult_list_wrap .swiper-button-prev:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat}
 		.searchingPeopleResult_list_wrap .swiper-button-next{overflow:hidden; right:-20px; top:calc(50% + 4px); width:40px; height:40px; margin-top:-20px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2)}
-		.searchingPeopleResult_list_wrap .swiper-button-next:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
+		.searchingPeopleResult_list_wrap .swiper-button-next:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
 		.searchingPeopleResult_list_wrap .swiper-button-disabled{display:none}
 
 		@media all and (-ms-high-contrast:none){
@@ -2821,9 +2821,9 @@ div.scrollbox {overflow-y:auto;}
 		.filmography_wrap .filmography_list .swiper-wrapper .swiper-slide a strong{display:block; margin-top:12px; font-size:15px; color:#222; line-height:1.400em; text-align:center}
 		.filmography_wrap .filmography_list .swiper-wrapper .swiper-slide a span{display:block; font-size:15px; color:#666; line-height:1.400em; text-align:center}
 		.filmography_wrap .swiper-button-prev{overflow:hidden; left:-20px; top:calc(50% - 26px); width:40px; height:40px; margin-top:-20px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2)}
-		.filmography_wrap .swiper-button-prev:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat}
+		.filmography_wrap .swiper-button-prev:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat}
 		.filmography_wrap .swiper-button-next{overflow:hidden; right:-20px; top:calc(50% - 26px); width:40px; height:40px; margin-top:-20px; font-size:0; border-radius:50%; box-shadow:2px 2px 8px 0 rgba(0, 0, 0, 0.2)}
-		.filmography_wrap .swiper-button-next:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('./../images/common/ico/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
+		.filmography_wrap .swiper-button-next:after{content:''; display:block; width:40px; height:40px; background:rgba(255, 255, 255, 0.8) url('../img/arrowL.png') center/9px 13px scroll no-repeat; transform:rotate(-180deg)}
 		.filmography_wrap .swiper-button-disabled{display:none}
 
 /* S > 이벤트검색 결과 */
