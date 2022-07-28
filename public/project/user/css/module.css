@@ -270,10 +270,10 @@ div[class^="sect-"] .btn-itemmore{ margin-top:30px;}
 ============================= */
 
 /* 영화포스터 크게 보기 +  */
-.ico-posterdetail{ display:block; position:absolute; left:4px; bottom:3px; width:24px; height:24px; background:url('../images/sprite/sprite_icon.png') 0 0 no-repeat; font:0/0 a;zoom:1;}
+.ico-posterdetail{ display:block; position:absolute; left:4px; bottom:3px; width:24px; height:24px; background:url('../img/sprite_icon.png') 0 0 no-repeat; font:0/0 a;zoom:1;}
 
 /* ico 영화등급 */
-.ico-grade{ display:block; position:absolute; left:5px; top:5px; width:21px; height:21px; background:url('../images/sprite/sprite_icon.png') no-repeat;font:0/0 a;zoom:1;}
+.ico-grade{ display:block; position:absolute; left:5px; top:5px; width:21px; height:21px; background:url('../img/sprite_icon.png') no-repeat;font:0/0 a;zoom:1;}
 .ico-grade.grade-all{ background-position:-30px 0;}/* 전체 */
 .ico-grade.grade-12{ background-position:-51px 0;}/* 12세 */
 .ico-grade.grade-15{ background-position:-72px 0;}/* 15세 */
@@ -489,7 +489,7 @@ div[class^="sect-"] .btn-itemmore{ margin-top:30px;}
 
 /* 상영 타입 */
 .screentype { display:block;}
-.screentype span, .screentype a{ display:inline-block; width:80px; height:56px; background:url('../images/sprite/sprite_screentype_v3.png') no-repeat; font:0/0 a;zoom:1;}
+.screentype span, .screentype a{ display:inline-block; width:80px; height:56px; background:url('../img/sprite_screentype_v3.png') no-repeat; font:0/0 a;zoom:1;}
 .screentype .imax{ background-position:0 0;}
 .screentype .threeD{ background-position:0 -56px;}
 .screentype .forDX{ background-position:0 -112px;}
@@ -1818,7 +1818,7 @@ div[class^="sect-"] .btn-itemmore{ margin-top:30px;}
 .sect-price h5{ font-size:15px;color:#333333; padding-bottom:5px;}
 .sect-price .tab-menu-round > li{ padding:0 40px;}
 .sect-price .screentype{ display:inline-block; width:90px; vertical-align:middle;}
-.sect-price .screentype span{width:82px; height:17px; margin-right:10px; background:url('../images/sprite/sprite_screentype02.png') -99px 0 no-repeat; vertical-align:top;}
+.sect-price .screentype span{width:82px; height:17px; margin-right:10px; background:url('../img/sprite_screentype02.png') -99px 0 no-repeat; vertical-align:top;}
 .sect-price .screentype .gold{ background-position:-99px 0;}
 .sect-price .screentype .imax{ background-position:-99px -18px;}
 .sect-price .screentype .forDX{ background-position:-99px -36px;}
