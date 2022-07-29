@@ -4,7 +4,7 @@
 #header h1{position:static;display:block;width:auto!important;height:auto!important;padding-bottom:15px!important;margin-bottom:15px!important;border-bottom:2px solid #000}
 #header h1>a{display:block}
 #viewgrade, .company-wrap.cj:before, .linemap-wrap, .sect-aside-banner, .skipnaiv{display:none}
-.ico-grade{position:static;display:block;font-size:12px;line-height:1.2;font-weight:500;}
+.ico-grade{display:block;font-size:12px;line-height:1.2;font-weight:500;}
 #print{display:none}
 h1{display:block}
 .wrap-movie-collage .col-aside,
