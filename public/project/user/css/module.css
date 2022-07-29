@@ -54,7 +54,7 @@
 	/* 영화차트 광고 */
 .chart-ad{ width:189px; height:414px; padding:2px 4px; /*border:3px solid #070707;*/ background:#212120;}
 .chart-ad .box-com{ padding:13px 14px 12px; border:1px solid #070707; background:#222221;}
-.chart-ad img{ padding-left:15px}
+/* .chart-ad img{ padding-left:15px} */
 .chart_ad_desc {width:160px;margin:0 auto;padding:16px 0 0 0}
 .chart_ad_desc span {color:#fdfcf0}
 .chart_ad_desc img {margin:0;padding:0}
