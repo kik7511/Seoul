@@ -1,0 +1,11 @@
+@charset "utf-8";
+.character {
+   display: grid;
+   grid-template-columns: 50% 50%;
+ }
+
+ [class *= cell] {
+   box-sizing: border-box;
+   padding: 20px;
+   /* 각각의 요소들이 눈에 보이도록 입력하였습니다. */
+ }
