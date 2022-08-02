@@ -134,10 +134,10 @@ a:hover{text-decoration: none;}
 #ticket .section-movie .col-body .movie-select .tabmenu .tabmenu-selectbox.SPECIALTHEATER{width:88px;left:152px;top:38px;}
 #ticket.english .section-movie .col-body .movie-select .tabmenu{letter-spacing:-1px;}
 
-#ticket .section-movie .col-body .movie-select .sortmenu{float:left;width:244px;margin-top:2px;height:32px;line-height:32px;font-size:12px;background:url(../img/step1/sortmenu_border_bottom.png) repeat-x bottom;}
+#ticket .section-movie .col-body .movie-select .sortmenu{float:left;width:244px;margin-top:2px;height:32px;line-height:32px;font-size:12px;background:url(../img/sortmenu_border_bottom.png) repeat-x bottom;}
 #ticket .section-movie .col-body .movie-select .sortmenu .button{float:left;min-width:50px;height:32px;line-height:32px;color:#666;padding:0 5px;}
 #ticket.english .section-movie .col-body .movie-select .sortmenu .button{padding:0 3px;}
-#ticket .section-movie .col-body .movie-select .sortmenu .button.selected{color:#333;background:url(../img/step1/sortmenu_btn_on.png) no-repeat 50% 100%;color:#333;}
+#ticket .section-movie .col-body .movie-select .sortmenu .button.selected{color:#333;background:url(../img/sortmenu_btn_on.png) no-repeat 50% 100%;color:#333;}
 
 #ticket .section-movie .col-body .movie-select .movie-list{float:left;width:254px;margin-top:3px;height:84%;}
 
@@ -176,11 +176,11 @@ a:hover{text-decoration: none;}
 #ticket .section-movie .col-body .movie-select .movie-list > ul > li.rating-18.dimmed.selected > a span.icon,
 #ticket .section-movie .col-body .movie-select .movie-list > ul > li.rating-18.dimmed.press > a span.icon{background-image:url(../img/icon_rating_18.png);}
 */
-#ticket .section-movie .col-body .movie-select .movie-list > ul > li.dimmed > a{opacity:0.25; filter:alpha(opacity=25); /*background:url(../img/step1/movielist_item_dimmed.png);*/}
+#ticket .section-movie .col-body .movie-select .movie-list > ul > li.dimmed > a{opacity:0.25; filter:alpha(opacity=25); /*background:url(../img/movielist_item_dimmed.png);*/}
 /*#ticket .section-movie .col-body .movie-select .movie-list > ul > li.dimmed > a span.text{color:#6c6c6c;}*/
-/*#ticket .section-movie .col-body .movie-select .movie-list > ul > li.selected > a{background:url(../img/step1/movielist_item_selected.png);}*/
+/*#ticket .section-movie .col-body .movie-select .movie-list > ul > li.selected > a{background:url(../img/movielist_item_selected.png);}*/
 #ticket .section-movie .col-body .movie-select .movie-list > ul > li.selected > a span.text{color:#fff;}
-/*#ticket .section-movie .col-body .movie-select .movie-list > ul > li.press > a{background:url(../img/step1/movielist_item_selected.png);}*/
+/*#ticket .section-movie .col-body .movie-select .movie-list > ul > li.press > a{background:url(../img/movielist_item_selected.png);}*/
 #ticket .section-movie .col-body .movie-select .movie-list > ul > li.press > a span.text{color:#fff;}
 
 #ticket .section-movie .col-body .movie-select .movie-list > ul > li.selected,
@@ -204,7 +204,7 @@ a:hover{text-decoration: none;}
 #ticket .section-movie .col-body .selectbox-movie-type ul li.overline{border-top:1px solid #a6a49e;}
 #ticket .section-movie .col-body .selectbox-movie-type ul li.dimmed{opacity:0.25; filter:alpha(opacity=25);}
 /*
-#ticket .section-movie .col-body .selectbox-movie-type ul li.dimmed a{color:#6c6c6c; background:url(../img/step1/movielist_attr_item_dimmed.png);}
+#ticket .section-movie .col-body .selectbox-movie-type ul li.dimmed a{color:#6c6c6c; background:url(../img/movielist_attr_item_dimmed.png);}
 */
 
 /* section-theater */
@@ -234,7 +234,7 @@ a:hover{text-decoration: none;}
 #ticket .section-theater .col-body .theater-select .theater-list .theater-area-list > ul{width:100%;height:100%;}
 #ticket .section-theater .col-body .theater-select .theater-list .theater-area-list > ul > li{clear:both;overflow:hidden;float:left;width:100%;height:31px;line-height:31px;margin-bottom:1px;}
 #ticket .section-theater .col-body .theater-select .theater-list .theater-area-list > ul > li > a{display:block;color:#333333;font-size:12px;letter-spacing: -0.1em;text-align:right; white-space:nowrap;text-overflow:ellipsis;overflow:hidden;vertical-align:middle;padding-left:6px;padding-right:8px;background-color:#e6e4d9;}
-#ticket .section-theater .col-body .theater-select .theater-list .theater-area-list > ul > li.selected > a{background:url(../img/step1/theaterarealist_item_selected.png) no-repeat right;background-color:transparent;} 
+#ticket .section-theater .col-body .theater-select .theater-list .theater-area-list > ul > li.selected > a{background:url(../img/theaterarealist_item_selected.png) no-repeat right;background-color:transparent;} 
 #ticket .section-theater .col-body .theater-select .theater-list .theater-area-list > ul > li > div{display:none;position:absolute;top:0;right:0;width:124px;height:100%;}
 #ticket .section-theater .col-body .theater-select .theater-list .theater-area-list > ul > li.selected > div{display:block;}
 /*
@@ -245,9 +245,9 @@ a:hover{text-decoration: none;}
 #ticket .section-theater .col-body .theater-select .theater-list .theater-cgv-list ul li.dimmed{opacity:0.25; filter:alpha(opacity=25);}
 */
 /*
-#ticket .section-theater .col-body .theater-select .theater-list .theater-cgv-list ul li.dimmed a {color:#666; background:url(../img/step1/theatercgvlist_item_dimmed.png) no-repeat;}
+#ticket .section-theater .col-body .theater-select .theater-list .theater-cgv-list ul li.dimmed a {color:#666; background:url(../img/theatercgvlist_item_dimmed.png) no-repeat;}
 */ 
-/*#ticket .section-theater .col-body .theater-select .theater-list .theater-cgv-list ul li.selected a {color:#fff;background:url(../img/step1/theatercgvlist_item_selected.png) no-repeat;}*/
+/*#ticket .section-theater .col-body .theater-select .theater-list .theater-cgv-list ul li.selected a {color:#fff;background:url(../img/theatercgvlist_item_selected.png) no-repeat;}*/
 /*#ticket .section-theater .col-body .theater-select .theater-list .theater-cgv-list ul li.selected{background-color:#333;width:112px;height:33px;line-height:33px;border:1px solid #000;}
 #ticket .section-theater .col-body .theater-select .theater-list .theater-cgv-list ul li.selected a{border:1px solid #5c5c5c;height:29px;line-height:29px;margin:1px;color:#fff;padding-left:5px;padding-right:5px;}
 */
@@ -281,18 +281,18 @@ a:hover{text-decoration: none;}
 #ticket .section-date .col-body .date-list ul li.day.day-sun a span.day{color:#ad2727;}
 #ticket .section-date .col-body .date-list ul li.day.dimmed a{opacity:0.25; filter:alpha(opacity=25);}
 /*
-#ticket .section-date .col-body .date-list ul li.day.dimmed a{background:url(../img/step1/datelist_item_dimmed.png);}
+#ticket .section-date .col-body .date-list ul li.day.dimmed a{background:url(../img/datelist_item_dimmed.png);}
 #ticket .section-date .col-body .date-list ul li.day.dimmed a span.dayweek{color:#666;}
 #ticket .section-date .col-body .date-list ul li.day.dimmed a span.day{color:#666;}
 */
-/*#ticket .section-date .col-body .date-list ul li.day.selected a{background:url(../img/step1/datelist_item_selected.png);}*/
+/*#ticket .section-date .col-body .date-list ul li.day.selected a{background:url(../img/datelist_item_selected.png);}*/
 #ticket .section-date .col-body .date-list ul li.day.selected a span.dayweek{color:#fff;}
 #ticket .section-date .col-body .date-list ul li.day.selected a span.day{color:#fff;}
-/*#ticket .section-date .col-body .date-list ul li.day.today{background-image:url(../img/step1/datelist_item_today.png);background-repeat:no-repeat;background-position:left center;}*/
+/*#ticket .section-date .col-body .date-list ul li.day.today{background-image:url(../img/datelist_item_today.png);background-repeat:no-repeat;background-position:left center;}*/
 
 #ticket .section-date .col-body .date-list ul li.day.selected{background-color:#333;width:60px;height:33px;line-height:33px;border:1px solid #000;}
 #ticket .section-date .col-body .date-list ul li.day.selected a{border:1px solid #5c5c5c;height:29px;line-height:29px;margin:1px;padding-left:6px;padding-right:5px;color:#fff;}
-#ticket .section-date .col-body .date-list ul li.day span.today{display:block;width:5px;height:9px;position:absolute;top:14px;left:-12px;background:url(../img/step1/datelist_item_today.png) no-repeat}
+#ticket .section-date .col-body .date-list ul li.day span.today{display:block;width:5px;height:9px;position:absolute;top:14px;left:-12px;background:url(../img/datelist_item_today.png) no-repeat}
 #ticket .section-date .col-body .date-list ul li.day.selected span.today{left:-13px;top:13px;}
 
 /* section-time step1 */
@@ -319,12 +319,12 @@ a:hover{text-decoration: none;}
 #ticket .step1 .section-time .col-body .time-list .theater ul {width:309px;margin-top:10px;margin-bottom:6px;overflow:hidden;}
 #ticket .step1 .section-time .col-body .time-list .theater ul li {position:relative; float:left;height:25px;line-height:25px;padding-bottom:9px;}
 #ticket .step1 .section-time .col-body .time-list .theater ul li a {display:block;vertical-align:middle;width:103px;height:25px;}
-#ticket .step1 .section-time .col-body .time-list .theater ul li a span.time{float:left;width:51px;height:25px;line-height:25px;color:#333;font-size:12px;font-weight:bold;font-family:Verdana;background:url(../img/step1/timelist_item_none.png) no-repeat;}
+#ticket .step1 .section-time .col-body .time-list .theater ul li a span.time{float:left;width:51px;height:25px;line-height:25px;color:#333;font-size:12px;font-weight:bold;font-family:Verdana;background:url(../img/timelist_item_none.png) no-repeat;}
 #ticket .step1 .section-time .col-body .time-list .theater ul li a span.time{width:49px;height:23px;line-height:23px;border:1px solid #d6d3ce;background-image:none;background-color:#f2f0e5;}
 #ticket .step1 .section-time .col-body .time-list .theater ul li a span.time span{display:block;}
 #ticket .step1 .section-time .col-body .time-list .theater ul li a span.count{float:left;width:49px;height:20px;line-height:25px;text-align:left;color:#3d7c35;font-size:12px;padding-left:3px;overflow:hidden;}
 
-#ticket .step1 .section-time .col-body .time-list .theater ul li.selected a span.time{color:#fff;background-image:url(../img/step1/timelist_item_selected.png);}
+#ticket .step1 .section-time .col-body .time-list .theater ul li.selected a span.time{color:#fff;background-image:url(../img/timelist_item_selected.png);}
 #ticket .step1 .section-time .col-body .time-list .theater ul li.selected a span.time{background-image:none;border-color:#000;background-color:#333;}
 #ticket .step1 .section-time .col-body .time-list .theater ul li.selected a span.time span{border:1px solid #5c5c5c;margin:1px;line-height:19px;}
 #ticket .step1 .section-time .col-body .time-list .theater ul li.morning a span.count{padding-left:19px;width:33px;background:url(../img/icon_morning_night.png) no-repeat left;background-position:2px 6px;}
@@ -361,10 +361,10 @@ a:hover{text-decoration: none;}
 #ticket .step2 .section-time .col-body .time-list .theater ul {width:258px;margin-top:10px;margin-bottom:6px;overflow:hidden;}
 #ticket .step2 .section-time .col-body .time-list .theater ul li {position:relative; float:left;height:25px;line-height:25px;padding-bottom:9px;}
 #ticket .step2 .section-time .col-body .time-list .theater ul li a {display:block;vertical-align:middle;width:124px;height:25px;}
-#ticket .step2 .section-time .col-body .time-list .theater ul li a span.time {float:left; width:51px; height:25px; line-height:25px; color:#333; font-size:12px; font-weight:bold; font-family:Verdana; background:url(../img/step1/timelist_item_none.png) no-repeat;}
+#ticket .step2 .section-time .col-body .time-list .theater ul li a span.time {float:left; width:51px; height:25px; line-height:25px; color:#333; font-size:12px; font-weight:bold; font-family:Verdana; background:url(../img/timelist_item_none.png) no-repeat;}
 #ticket .step2 .section-time .col-body .time-list .theater ul li a span.count {float:left; width:49px; height:25px; line-height:25px; text-align:left; color:#3d7c35; font-size:12px; padding-left:3px;}
 
-#ticket .step2 .section-time .col-body .time-list .theater ul li.selected a span.time{color:#fff; background-image:url(../img/step1/timelist_item_selected.png);}
+#ticket .step2 .section-time .col-body .time-list .theater ul li.selected a span.time{color:#fff; background-image:url(../img/timelist_item_selected.png);}
 #ticket .step2 .section-time .col-body .time-list .theater ul li.morning a span.count{padding-left:19px; width:33px; background:url(../img/icon_morning.png) no-repeat 4px 5px;}
 #ticket .step2 .section-time .col-body .time-list .theater ul li.night a span.count{padding-left:19px; width:33px; background:url(../img/icon_night.png) no-repeat 4px 5px;}
 #ticket .step2 .section-time .col-body .time-list .theater ul li.disabled a span.time{color:#666; text-decoration:line-through; background-image:none;}
@@ -387,9 +387,9 @@ a:hover{text-decoration: none;}
 #ticket .section-numberofpeople .col-body .numberofpeople-select .group ul {float:left;width:auto; height:22px; line-height:22px; overflow:hidden;}
 #ticket .section-numberofpeople .col-body .numberofpeople-select .group ul li{float:left;width:22px;height:22px;margin-right:6px;}
 #ticket .section-numberofpeople .col-body .numberofpeople-select .group ul li{width:20px;height:20px;line-height:20px;border:1px solid #d6d3ce;background-color:#f2f0e5;}
-#ticket .section-numberofpeople .col-body .numberofpeople-select .group ul li a{display:block;height:100%;color:#333;font-family:Verdana;font-size:14px;font-weight:bold;text-align:center;}/*background:url(../img/step1/numberofpeople_num_none.png) no-repeat;*/
+#ticket .section-numberofpeople .col-body .numberofpeople-select .group ul li a{display:block;height:100%;color:#333;font-family:Verdana;font-size:14px;font-weight:bold;text-align:center;}/*background:url(../img/numberofpeople_num_none.png) no-repeat;*/
 #ticket .section-numberofpeople .col-body .numberofpeople-select .group ul li.selected{border-color:#000;background-color:#333;}
-#ticket .section-numberofpeople .col-body .numberofpeople-select .group ul li.selected a{color:#fff;}/*background-image:url(../img/step1/numberofpeople_num_selected.png);*/
+#ticket .section-numberofpeople .col-body .numberofpeople-select .group ul li.selected a{color:#fff;}/*background-image:url(../img/numberofpeople_num_selected.png);*/
 #ticket .section-numberofpeople .col-body .numberofpeople-select .group ul li.selected a{margin:1px;border:1px solid #5c5c5c;width:16px;height:16px;line-height:16px;}
 #ticket.english .section-numberofpeople .col-body .numberofpeople-select .group span.title {float:left; width:60px; height:22px; line-height:22px; color:#666; letter-spacing: -0.1em;}
 
