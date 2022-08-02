@@ -3,9 +3,16 @@
    display: grid;
    grid-template-columns: 50% 50%;
  }
-
- [class *= cell] {
+ .cell {
    box-sizing: border-box;
-   padding: 20px;
-   /* 각각의 요소들이 눈에 보이도록 입력하였습니다. */
  }
+ .cell-b{
+ 	padding-top: 40px;
+ }
+.staff {
+	padding-left: 20px;
+	display: inline-block;
+	font-size: 15px;
+	position: relative; 
+	bottom: 58px;
+	}
