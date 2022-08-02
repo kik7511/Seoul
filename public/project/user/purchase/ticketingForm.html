@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/sebfont.css">
 	<link rel="stylesheet" type="text/css" href="../css/grid.css">
+	<link rel="stylesheet" type="text/css" href="../css/reservation.css">
 </head>
 <body>
 
@@ -89,15 +90,61 @@
 		</div>
 		<!-- container -->
 		<div id="contaniner" class=""><!-- 벽돌 배경이미지 사용 시 class="bg-bricks" 적용 / 배경이미지가 없을 경우 class 삭제  -->
-			<div id="contents" class="">
-            
+			<div id="contents" class="" style="margin-bottom: 0px;">
+			</div>
+			<div id="wrap">
+				<div id="container">
+					<div id="ticket" class="ticket ko">
+						<div class="navi">
+							<span class="right">
+								<a class="button button-reservation-restart" href="#"></a>
+							</span>
+						</div>
+						<div class="steps">
+							<div class="step step1" style="height: 720px; display: block;">
+								<div class="section section-movie">
+									<div class="col-head" id="skip_movie_list"> 
+										<h3 class="sreader">영화</h3>
+									</div>
+									<div class="col-body" style="height: 685px;">
+										<div class="movie-select">
+											<div class="movie-list nano has-scrollbar has-scrollbar-y" id="movie_list">
+												<ul class="content scroll-y" onscroll="movieSectionScrollEvent();" tabindex="-1" style="right: -17px;">
+													<li class="rating-12" data-index="0" movie_cd_group="20028465" movie_idx="85465">
+														<a href="#" onclick="return false;" title="비상선언" alt="비상선언">
+															<span class="icon">&nbsp;</span>
+															<span class="text">비상선언</span>
+															<span class="sreader"></span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="section section-theater">
+								</div>
+								<div class="section section-date">
+								</div>
+								<div class="section section-time">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="ticket_tnb" class="tnb_container">
+				
+				</div>
+				<div class="banner" id="ticket_bottom_banner" style="padding-top: 0px;">
+					
+				</div>
+			</div>
        		<!-- Contents Start -->
-
+			
 				<!-- 실컨텐츠 시작 -->
             <!--/ Contents End -->
+		<!-- E > 공지사항 & 고객센터 -->
 		</div>
-	<!-- E > 공지사항 & 고객센터 -->
-	</div>
     <!-- E Contaniner -->
     <!-- S Footer -->
 	    <footer>
