@@ -117,7 +117,7 @@
 .ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row.sms_author_safe > .content{width:274px;}
 .ft_layer_popup.popup_reservation_check .bd .article.payment_info table tr td .row.sms_author_safe > .content .wrap_input{float:left; width:100px;}
 .ft_layer_popup.popup_reservation_check .bd .article.desc{clear:both; width:907px; height: auto; padding: 15px 0; border-right:none;border-top:solid 1px #bebebd;border-bottom:solid 2px #bebebd; border-left:none; background-color:#eeeeec;}
-.ft_layer_popup.popup_reservation_check .bd .article.desc ul li{display:block; width: 878px; line-height:15px; margin: 0 0 6px 15px; padding-left:7px; background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/payment_li.png)left 8px no-repeat;}
+.ft_layer_popup.popup_reservation_check .bd .article.desc ul li{display:block; width: 878px; line-height:15px; margin: 0 0 6px 15px; padding-left:7px; background:url(../img/payment_li.png) no-repeat;}
 .ft_layer_popup.popup_reservation_check .bd .article.desc a.refundNotice {display:block; text-decoration: underline; color: #207cca; margin-top: 10px; margin-left: 15px; }
 .ft_layer_popup.popup_reservation_check .bd .agreement{float:left; width:100%; margin-top:16px; padding-bottom:19px; height:13px; line-height:13px; text-align:center;}
 .ft_layer_popup.popup_reservation_check .bd .agreement .btn_terms{color:#1a92ce; font-weight:bold; margin-left:12px; margin-right:32px;}
@@ -355,7 +355,7 @@
 .popup_guide .tab_menu > ul > li > a{display:block;text-align:center;height:66px;margin-left:-2px;margin-right:-2px;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab_menu1.gif) no-repeat right -40px;text-decoration:none;}
 .popup_guide .tab_menu > ul > li.first > a{margin-left:0 !important;}
 .popup_guide .tab_menu > ul > li > a > span{padding-left:34px;height:66px;line-height:65px;display:block;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab_menu1.gif) no-repeat left 0;}
-.popup_guide .tab_menu > ul > li > a var{line-height:66px;#line-height:65px;height:66px;padding-right:33px;display:block;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab_menu1.gif) no-repeat right -66px;}
+/* .popup_guide .tab_menu > ul > li > a var{line-height:66px;#line-height:65px;height:66px;padding-right:33px;display:block;background:src(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/popup/guide/tab_menu1.gif) no-repeat right -66px;} */
 .popup_guide .tab_menu > ul > li > a.on{position:relative;margin-right:-2px;background-position:right -119px;font-weight:bold;}
 .popup_guide .tab_menu > ul > li > a.on > span{background-position:left -131px;}
 .popup_guide .tab_menu > ul > li > a.on var{background-position:right -131px;}
