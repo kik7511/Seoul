@@ -1507,10 +1507,10 @@
 .sect-mycgv-reserve.movielog.col4 .box-inner {width: 198px!important;padding: 0;text-align: center;line-height: 16px;}
 .sect-mycgv-reserve.movielog.col4 .box-inner a {display: inline-block;padding: 50px 0 16px;}
 .sect-mycgv-reserve.movielog.col4 h3 {background: none;color: #000;font-size: 16px;margin: 0 auto 2px;line-height: 20px;height: auto;}
-.sect-mycgv-reserve.movielog.col4 .box-inner.wishlist {background:url(../img/mycgv/icon_wishlist.png) no-repeat 50% 16px;}
-.sect-mycgv-reserve.movielog.col4 .box-inner.watched {background:url(../img/mycgv/icon_watched.png) no-repeat 50% 16px;}
-.sect-mycgv-reserve.movielog.col4 .box-inner.mvdiary {background:url(../img/mycgv/icon_mvdiary.png) no-repeat 50% 16px;}
-.sect-mycgv-reserve.movielog.col4 .box-inner.photi {background:url(../img/mycgv/icon_photi.png) no-repeat 50% 16px;}
+.sect-mycgv-reserve.movielog.col4 .box-inner.wishlist {background:url(../img/icon_wishlist.png) no-repeat 50% 16px;}
+.sect-mycgv-reserve.movielog.col4 .box-inner.watched {background:url(../img/icon_watched.png) no-repeat 50% 16px;}
+.sect-mycgv-reserve.movielog.col4 .box-inner.mvdiary {background:url(../img/icon_mvdiary.png) no-repeat 50% 16px;}
+.sect-mycgv-reserve.movielog.col4 .box-inner.photi {background:url(../img/icon_photi.png) no-repeat 50% 16px;}
 
 /*141114 mycgv coupon UI 변경*/
 
@@ -1518,9 +1518,9 @@
 .sect-mycgv-reserve.movielog.col3 .box-inner:first-child{width:266px}
 .sect-mycgv-reserve.movielog.col3 .box-inner a {display: inline-block;padding: 50px 0 16px;}
 .sect-mycgv-reserve.movielog.col3 h3 {background: none;color: #000;font-size: 16px;margin: 0 auto 2px;line-height: 20px;height: auto;}
-.sect-mycgv-reserve.movielog.col3 .box-inner.preegg {background:url('../img/mycgv/icon_preegg.png') no-repeat 50% 16px;}
-.sect-mycgv-reserve.movielog.col3 .box-inner.watched {background:url('../img/mycgv/icon_watched.png') no-repeat 50% 16px;}
-.sect-mycgv-reserve.movielog.col3 .box-inner.mvdiary {background:url('../img/mycgv/icon_mvdiary.png') no-repeat 50% 16px;}
+.sect-mycgv-reserve.movielog.col3 .box-inner.preegg {background:url('../img/icon_preegg.png') no-repeat 50% 16px;}
+.sect-mycgv-reserve.movielog.col3 .box-inner.watched {background:url('../img/icon_watched.png') no-repeat 50% 16px;}
+.sect-mycgv-reserve.movielog.col3 .box-inner.mvdiary {background:url('../img/icon_mvdiary.png') no-repeat 50% 16px;}
 
 
 .tab_mycgv {height: 37px;position: relative;margin-bottom:10px;}
