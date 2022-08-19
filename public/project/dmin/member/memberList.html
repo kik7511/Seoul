@@ -12,6 +12,17 @@
 		#cursor {
 			cursor: pointer;
 		}
+		.menu{}
+		.menu li{}
+		.menu li a{
+			height: 30px;
+			line-height: 30px;
+			display: block;
+			padding: 0 20px;
+			font-size: 12px;
+			color: #555;
+		}
+		.menu li a:hover{background-color: yellowgreen; color: white;}
 	</style>
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web/css/fontawesome.min.css">
 </head>
@@ -75,6 +86,16 @@
 				</li>
 			</ul>
 		</nav>
+		<!-- 사이드 바 -->
+		<nav style="width: 200px; position: fixed; height: 100%;">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</nav>
+		
 		<div class="container py-2">
 			<img alt="" src="../img/mainpage.jpg" style="width: 1300px;">
 		</div>
@@ -128,6 +149,7 @@
 				</div>
 			</div>
 			<br>
+			
 			<div class="container" style="margin: auto;">	
 				<table class="table table-responsive table-hover table-sm" style="text-align: center;" id="maintable">
 					<tr class="table-dark">
