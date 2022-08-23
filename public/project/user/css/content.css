@@ -1515,7 +1515,7 @@
 /*141114 mycgv coupon UI 변경*/
 
 .sect-mycgv-reserve.movielog.col3 .box-inner {width:265px; padding: 0;text-align: center;line-height: 16px;}
-.sect-mycgv-reserve.movielog.col3 .box-inner:first-child{width:266px}
+.sect-mycgv-reserve.movielog.col3 .box-inner:first-child{width:265px}
 .sect-mycgv-reserve.movielog.col3 .box-inner a {display: inline-block;padding: 50px 0 16px;}
 .sect-mycgv-reserve.movielog.col3 h3 {background: none;color: #000;font-size: 16px;margin: 0 auto 2px;line-height: 20px;height: auto;}
 .sect-mycgv-reserve.movielog.col3 .box-inner.preegg {background:url('../img/icon_preegg.png') no-repeat 50% 16px;}
