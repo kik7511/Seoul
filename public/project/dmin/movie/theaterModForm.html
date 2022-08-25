@@ -27,6 +27,21 @@
 		.nav_overMenu > dl > dt, dd:hover{
 			background-color: yellow;
 		}
+		.blank{
+			margin: 80px;
+		}
+		.subtitle{
+			margin-top: 15px;
+		}
+		.standard{
+			float: right;
+		}
+		.standard p{
+			font-weight: bold;
+			font-size: 20px;
+			color: #0096c6;
+			margin-bottom: 5px;
+		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web/css/fontawesome.min.css">
 </head>
@@ -109,10 +124,13 @@
 		</div>		
 		<form method="post" action="./member/memberList.html" id="">
 			<div class="container">
-                <div></div>
-                <div>
-                
+				<div class="subtitle">
+                	<h4 style="font-weight: 900;">영화상영관 정보</h4>
                 </div>     
+                <div class="blank"></div>
+                <div class="standard">
+                	<p>2022년 8월 25일(목) 기준</p>
+                </div>
                 <table class="table table-responsive table-hover table-sm" style="text-align: center;" id="maintable">
 					<tr class="table-dark">
 						<th scope="col">
@@ -132,64 +150,119 @@
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">1</th>							
-							<td>김대겸</td>
-							<td>남</td>
-							<td>93.10.17</td>
-							<td>kik7511</td>
-							<td>01054137511</td>		
-							<td>01054137511</td>						
+							<td>CGV 영등포</td>
+							<td>서울시</td>
+							<td>12</td>
+							<td>2,714</td>
+							<td>2009-09-15</td>		
+							<td>영업</td>						
 						</tr>
 						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">2</th>							
-							<td>김대겸</td>
-							<td>남</td>
-							<td>93.10.17</td>
-							<td>kik7511</td>
-							<td>01054137511</td>	
-							<td>01054137511</td>	
+							<td>CGV 신촌아트레온</td>
+							<td>서울시</td>
+							<td>10</td>
+							<td>1,561</td>
+							<td>2013-06-21</td>	
+							<td>영업</td>	
 						</tr>
 						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">3</th>							
-							<td>김대겸</td>
-							<td>남</td>
-							<td>93.10.17</td>
-							<td>kik7511</td>
-							<td>01054137511</td>	
-							<td>01054137511</td>	
+							<td>CGV 강변</td>
+							<td>서울시</td>
+							<td>12</td>
+							<td>1,666</td>
+							<td>1998-04-04</td>	
+							<td>영업</td>	
 						</tr>
 						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">4</th>							
-							<td>김대겸</td>
-							<td>남</td>
-							<td>93.10.17</td>
-							<td>kik7511</td>
-							<td>01054137511</td>	
-							<td>01054137511</td>	
+							<td>CGV 방학</td>
+							<td>서울시</td>
+							<td>7</td>
+							<td>870</td>
+							<td>2022-04-28</td>	
+							<td>영업</td>	
 						</tr>
 						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">5</th>							
-							<td>김대겸</td>
-							<td>남</td>
-							<td>93.10.17</td>
-							<td>kik7511</td>
-							<td>01054137511</td>
-							<td>01054137511</td>		
+							<td>CGV 압구정</td>
+							<td>서울시</td>
+							<td>6</td>
+							<td>1,075</td>
+							<td>2006-03-30</td>	
+							<td>영업</td>		
 						</tr>
 					</tbody>
 				</table>
+				<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-center">
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#">1</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#">2</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#">3</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
             </div>
+            <div class="container">
+				<div class="btn-group me-2 btn-group-sm" role="group" style="float:  right;">
+					<button type="button" class="btn btn-outline-secondary" id="" onclick="location.href='memberRegForm.html'">
+						<i class="fa-solid fa-plus"></i>
+					</button>
+					<button type="button" class="btn btn-outline-danger" id="deleteInput" data-bs-toggle="modal" data-bs-target="#deleteModal" onclick="getCheckboxValue()">
+						<i class="fa-solid fa-trash-can"></i>
+					</button>
+					<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+						<div class="modal-dialog" id="result">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">회원정보 삭제</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<p>정말 삭제하시겠습니까?</p>	
+								</div>
+								<div class="modal-footer">
+        							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+        							<button type="button" class="btn btn-danger" id="delRow">삭제</button>
+      							</div>
+    						</div>
+  						</div>
+					</div>
+				</div>
+				<div class="btn-group me-2 btn-group-sm" role="group" style="float: left;">
+					<button type="button" class="btn btn-success" id="" onclick="location.href='memberList.html'" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="엑셀파일로 출력하기" >
+						<i class="fa-solid fa-copy"></i>
+					</button>
+				</div>
+			</div>
 			<div style="margin-top: 8em;"></div>
 			<div class="container">
 				<footer class="py-3 my-4">
