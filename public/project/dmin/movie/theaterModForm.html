@@ -86,10 +86,10 @@
 					<a class="nav-link" href="#" style="color: black;">코드관리</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" href="#" style="color: black;">회원관리</a>
+					<a class="nav-link" href="#" style="color: black;">회원관리</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" style="color: black;">현황관리</a>
+					<a class="nav-link active" href="#" style="color: black;">현황관리</a>
 					<dl class="nav_overMenu" style="display: none;">
 						<dt>
 							<a>현황관리</a>
@@ -109,9 +109,10 @@
 		</div>		
 		<form method="post" action="./member/memberList.html" id="">
 			<div class="container">
+                <div></div>
                 <div>
-                    
-                </div>
+                
+                </div>     
                 <table class="table table-responsive table-hover table-sm" style="text-align: center;" id="maintable">
 					<tr class="table-dark">
 						<th scope="col">
@@ -119,7 +120,7 @@
 						</th>
 						<th scope="col">NO</th>
 						<th scope="col">상영관명</th>
-						<th scope="col">광역단체/th>
+						<th scope="col">광역단체</th>
 						<th scope="col">스크린수</th>
 						<th scope="col">좌석수</th>
 						<th scope="col">개관일</th>
@@ -130,101 +131,61 @@
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
-							<th scope="col">1</th>
-							<td>
-								<div>
-									<i class="fa-solid fa-wrench"></i>
-									<span style="font-size: small;">관리자</span>
-								</div>	
+							<th scope="col">1</th>							
+							<td>김대겸</td>
+							<td>남</td>
+							<td>93.10.17</td>
+							<td>kik7511</td>
+							<td>01054137511</td>		
+							<td>01054137511</td>						
+						</tr>
+						<tr onclick="location.href='memberModForm.html'">
+							<td onclick="event.cancelBubble=true">
+								<input type="checkbox" class="form-check-input" name=check>
 							</td>
+							<th scope="col">2</th>							
+							<td>김대겸</td>
+							<td>남</td>
+							<td>93.10.17</td>
+							<td>kik7511</td>
+							<td>01054137511</td>	
+							<td>01054137511</td>	
+						</tr>
+						<tr onclick="location.href='memberModForm.html'">
+							<td onclick="event.cancelBubble=true">
+								<input type="checkbox" class="form-check-input" name=check>
+							</td>
+							<th scope="col">3</th>							
+							<td>김대겸</td>
+							<td>남</td>
+							<td>93.10.17</td>
+							<td>kik7511</td>
+							<td>01054137511</td>	
+							<td>01054137511</td>	
+						</tr>
+						<tr onclick="location.href='memberModForm.html'">
+							<td onclick="event.cancelBubble=true">
+								<input type="checkbox" class="form-check-input" name=check>
+							</td>
+							<th scope="col">4</th>							
+							<td>김대겸</td>
+							<td>남</td>
+							<td>93.10.17</td>
+							<td>kik7511</td>
+							<td>01054137511</td>	
+							<td>01054137511</td>	
+						</tr>
+						<tr onclick="location.href='memberModForm.html'">
+							<td onclick="event.cancelBubble=true">
+								<input type="checkbox" class="form-check-input" name=check>
+							</td>
+							<th scope="col">5</th>							
 							<td>김대겸</td>
 							<td>남</td>
 							<td>93.10.17</td>
 							<td>kik7511</td>
 							<td>01054137511</td>
-							<td>kik7511@naver.com</td>
-							<td>동의</td>
-							<td>2022.05.25</td>
-						</tr>
-						<tr onclick="location.href='memberModForm.html'">
-							<td onclick="event.cancelBubble=true">
-								<input type="checkbox" class="form-check-input" name=check>
-							</td>
-							<th scope="col">2</th>
-							<td>
-								<div>
-									<i class="fa-solid fa-user"></i>
-									<span style="font-size: small;">일반</span>
-								</div>	
-							</td>
-							<td>김철수</td>
-							<td>남</td>
-							<td>92.06.05</td>
-							<td>keitthh</td>
-							<td>01098664823</td>
-							<td>keitthh@gmail.com</td>
-							<td>동의</td>
-							<td>2022.07.01</td>
-						</tr>
-						<tr onclick="location.href='memberModForm.html'">
-							<td onclick="event.cancelBubble=true">
-								<input type="checkbox" class="form-check-input" name=check>
-							</td>
-							<th scope="col">3</th>
-							<td>
-								<div>
-									<i class="fa-solid fa-user"></i>
-									<span style="font-size: small;">일반</span>
-								</div>	
-							</td>
-							<td>이영희</td>
-							<td>여</td>
-							<td>88.06.31</td>
-							<td>lye2881</td>
-							<td>01035561245</td>
-							<td>lye2881@hanmail.net</td>
-							<td>미동의</td>
-							<td>2022.05.22</td>
-						</tr>
-						<tr onclick="location.href='memberModForm.html'">
-							<td onclick="event.cancelBubble=true">
-								<input type="checkbox" class="form-check-input" name=check>
-							</td>
-							<th scope="col">4</th>
-							<td>
-								<div>
-									<i class="fa-solid fa-user"></i>
-									<span style="font-size: small;">일반</span>
-								</div>	
-							</td>
-							<td>박상수</td>
-							<td>남</td>
-							<td>90.12.22</td>
-							<td>riskwr</td>
-							<td>01089612877</td>
-							<td>riskwr@naver.com</td>
-							<td>동의</td>
-							<td>2022.03.06</td>
-						</tr>
-						<tr onclick="location.href='memberModForm.html'">
-							<td onclick="event.cancelBubble=true">
-								<input type="checkbox" class="form-check-input" name=check>
-							</td>
-							<th scope="col">5</th>
-							<td>
-								<div>
-									<i class="fa-solid fa-user"></i>
-									<span style="font-size: small;">일반</span>
-								</div>	
-							</td>
-							<td>최민주</td>
-							<td>여</td>
-							<td>95.11.16</td>
-							<td>icon23</td>
-							<td>01077225416</td>
-							<td>icon23@naver.com</td>
-							<td>동의</td>
-							<td>2022.07.15</td>
+							<td>01054137511</td>		
 						</tr>
 					</tbody>
 				</table>
