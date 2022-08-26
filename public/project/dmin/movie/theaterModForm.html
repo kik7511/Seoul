@@ -12,35 +12,64 @@
 		#cursor {
 			cursor: pointer;
 		}
-		.nav_overMenu{
-
-			position: relative;
-			margin-bottom: 8px;			
-			margin-left: -1px;
-			padding: 5px 8px 0 15px;
-			border-right: 1px solid #dee2e6;;
-			border-left: 1px solid #dee2e6;;
-			border-bottom: 1px solid #dee2e6;;
-			border-end-start-radius: 10px;
-			border-end-end-radius: 10px;
+		ul li{
+			list-style: none;
+		}
+		
+		a{
+			text-decoration: none;
+			color:black;
+		}
+		a:hover{
+			color: black;
+		}
+		a:active{
+			color: black;
 		}		
-		.nav_overMenu > dl > dt, dd:hover{
-			background-color: yellow;
+		#menu{
+			line-height: 20px;
+			text-align: center;
 		}
-		.blank{
-			margin: 80px;
+		#menu > ul > li{
+			float: left;
+			position: relative;
 		}
+		#menu > ul > li > ul{
+			width: 98px;
+			display: none;
+			padding-left: 0px;
+			font-size: 15px;
+			position: absolute;
+			background-color: white;
+			border: 1px solid;
+			border-bottom-right-radius: 0.375rem;
+			border-bottom-left-radius: 0.375rem; 
+			border-color: #dee2e6 #dee2e6 #fff; 
+		}
+		#menu > ul > li:hover > ul{
+			display: block;
+		}
+		#menu > ul > li > ul > li:hover{
+			background: #ffd3d3d3;
+			transition: ease 1s;
+		}
+		#menu > ul > li > ul > li{
+			padding-bottom: 10px; 
+			padding-top: 10px;
+		}					
 		.subtitle{
 			margin-top: 15px;
+		}		
+		.col.img_box{
+			width: 190px;
+			margin-right: 10px;
+			margin-left: 20px;
+			margin-bottom: 20px;
+			margin-top: 20px;
 		}
-		.standard{
-			float: right;
-		}
-		.standard p{
-			font-weight: bold;
-			font-size: 20px;
-			color: #0096c6;
-			margin-bottom: 5px;
+		.col.img_box img{
+			width: 100%;
+			height: 260px;
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web/css/fontawesome.min.css">
