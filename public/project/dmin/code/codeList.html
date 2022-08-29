@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>memberList</title>
+	<title>codeList</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<style type="text/css">
 		div {display: block;}
@@ -77,10 +77,10 @@
 					<a class="nav-link" aria-current="page" href="#" style="color: black;">코드그룹관리</a>					
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" style="color: black;">코드관리</a>
+					<a class="nav-link active" href="#" style="color: black;">코드관리</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link  active" href="#" style="color: black;">회원관리</a>
+					<a class="nav-link" href="#" style="color: black;">회원관리</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#" style="color: black;">현황관리</a>
@@ -100,16 +100,14 @@
 					<div class="row px-2 row-cols-6">
 						<div class="col">
 							<select class="form-select form-select-sm" id="">
-								<option value="">::삭제여부::</option>
-
-								
+								<option value="">N</option>
 								<option value="1">삭제</option>
 								<option value="2">미삭제</option>
 							</select>
 						</div>
 						<div class="col">
 							<select class="form-select form-select-sm" id="">
-								<option value="">::날짜::</option>
+								<option value="">수정일</option>
 								<option value="1">가입일</option>
 								<option value="2">생일</option>
 							</select>
@@ -137,7 +135,7 @@
 								<button type="submit" class="btn btn-outline-secondary" id="">
 									<i class="fa-solid fa-magnifying-glass"></i>
 								</button>
-								<button type="button" class="btn btn-outline-secondary" id="" onclick="location.href='memberList.html'">
+								<button type="button" class="btn btn-outline-secondary" id="" onclick="location.href='./codeList.html'">
 									<i class="fa-solid fa-rotate-right"></i>
 								</button>
 							</div>
@@ -153,16 +151,13 @@
 						<th scope="col">
 							<input type="checkbox" class="form-check-input" onclick="selectAll(this);" name=check>
 						</th>
-						<th scope="col">NO</th>
-						<th scope="col">등급</th>
-						<th scope="col">이름</th>
-						<th scope="col">성별</th>
-						<th scope="col">생년월일</th>
-						<th scope="col">아이디</th>
-						<th scope="col">연락처</th>
-						<th scope="col">이메일</th>
-						<th scope="col">마케팅 동의여부</th>
-						<th scope="col">가입일</th>
+						<th scope="col">#</th>
+						<th scope="col">코드그룹</th>
+						<th scope="col">코드그룹 이름(한글)</th>
+						<th scope="col">코드그룹 이름(영문)</th>
+						<th scope="col">코드갯수</th>
+						<th scope="col">등록일</th>
+						<th scope="col">수정일</th>
 					</tr>
 					<tbody id="cursor">
 						<tr onclick="location.href='memberModForm.html'">
@@ -170,100 +165,65 @@
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">1</th>
-							<td>
-								<div>
-									<i class="fa-solid fa-wrench"></i>
-									<span style="font-size: small;">관리자</span>
-								</div>	
-							</td>
-							<td>김대겸</td>
-							<td>남</td>
-							<td>93.10.17</td>
-							<td>kik7511</td>
-							<td>01054137511</td>
-							<td>kik7511@naver.com</td>
-							<td>동의</td>
-							<td>2022.05.25</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">2</th>
-							<td>
-								<div>
-									<i class="fa-solid fa-user"></i>
-									<span style="font-size: small;">일반</span>
-								</div>	
-							</td>
-							<td>김철수</td>
-							<td>남</td>
-							<td>92.06.05</td>
-							<td>keitthh</td>
-							<td>01098664823</td>
-							<td>keitthh@gmail.com</td>
-							<td>동의</td>
-							<td>2022.07.01</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">3</th>
-							<td>
-								<div>
-									<i class="fa-solid fa-user"></i>
-									<span style="font-size: small;">일반</span>
-								</div>	
-							</td>
-							<td>이영희</td>
-							<td>여</td>
-							<td>88.06.31</td>
-							<td>lye2881</td>
-							<td>01035561245</td>
-							<td>lye2881@hanmail.net</td>
-							<td>미동의</td>
-							<td>2022.05.22</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">4</th>
-							<td>
-								<div>
-									<i class="fa-solid fa-user"></i>
-									<span style="font-size: small;">일반</span>
-								</div>	
-							</td>
-							<td>박상수</td>
-							<td>남</td>
-							<td>90.12.22</td>
-							<td>riskwr</td>
-							<td>01089612877</td>
-							<td>riskwr@naver.com</td>
-							<td>동의</td>
-							<td>2022.03.06</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr onclick="location.href='memberModForm.html'">
 							<td onclick="event.cancelBubble=true">
 								<input type="checkbox" class="form-check-input" name=check>
 							</td>
 							<th scope="col">5</th>
-							<td>
-								<div>
-									<i class="fa-solid fa-user"></i>
-									<span style="font-size: small;">일반</span>
-								</div>	
-							</td>
-							<td>최민주</td>
-							<td>여</td>
-							<td>95.11.16</td>
-							<td>icon23</td>
-							<td>01077225416</td>
-							<td>icon23@naver.com</td>
-							<td>동의</td>
-							<td>2022.07.15</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 					</tbody>
 				</table>
