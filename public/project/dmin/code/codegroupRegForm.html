@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>codegroupModForm</title>
+	<title>codegroupRegForm</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<style type="text/css">
 		div {display: block;}
@@ -95,10 +95,248 @@
 			<img alt="" src="../img/mainpage.jpg" style="width: 1300px;">						
 		</div>		
 		<form method="post" action="./member/memberList.html" id="">
-			
-			
-			
-			
+			<div class="container">
+				<div class="table border" style="border-radius: 1em;">
+					<table class="table align-middle">
+						<tbody>
+							<tr style="border-color: white;">
+								<td>
+									<div class="row row-cols-2">
+										<div class="col">
+											<span>코드그룹 코드</span>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<span>코드그룹 코드(Another)</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="영문(대소문자), 숫자">
+										</div>
+									</div>	
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="영문(대소문자), 숫자">
+										</div>
+									</div>	
+								</td>
+							</tr>
+							<tr style="border-color: white;">
+								<td>
+									<div class="row ">
+										<div class="col">
+											<span>코드그룹 이름(한글)</span>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<span>코드그룹 이름(영어)</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="한글, 숫자">
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="한글, 숫자">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr style="border-color: white;">
+								<td>
+									<div class="row ">
+										<div class="col">
+											<span>사용여부</span>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<span>숫자</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="row">
+										<div class="col">
+											<select class="form-select">
+												<option value="1">Y</option>
+												<option value="2">N</option>
+											</select>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="숫자">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr style="border-color: white;">
+								<td>
+									<div class="row ">
+										<div class="col">
+											<span>설명</span>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<span>삭제여부</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="row">
+										<div class="col">
+											<textarea style="width: 100%"></textarea>
+										</div>									
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<select class="form-select">
+												<option value="1">Y</option>
+												<option value="2">N</option>
+											</select>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr style="border-color: white;">
+								<td>
+									<div class="row ">
+										<div class="col">
+											<span>예비1(varchar type)</span>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<span>예비2(varchar type)</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="영문(대소문자), 숫자">
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="영문(대소문자), 숫자">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr style="border-color: white;">
+								<td>
+									<div class="row ">
+										<div class="col">
+											<span>예비3(varchar type)</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="영문(대소문자), 숫자">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr style="border-color: white;">
+								<td>
+									<div class="row ">
+										<div class="col">
+											<span>예비1(int type)</span>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<span>예비2(int type)</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="숫자">
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="숫자">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr style="border-color: white;">
+								<td>
+									<div class="row ">
+										<div class="col">
+											<span>예비3(int type)</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="숫자">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 			<div style="margin-top: 8em;"></div>
 			<div class="container">
 				<footer class="py-3 my-4">
