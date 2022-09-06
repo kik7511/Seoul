@@ -27,6 +27,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/reservation_step3_step1.css">
 	<link rel="stylesheet" type="text/css" href="../css/reservation_step3_step2.css">
 	<link rel="stylesheet" type="text/css" href="../css/reservation_popup.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/participate.css">
 </head>
 <body>
 
@@ -94,7 +96,188 @@
 			</div>
 		</div>
 		<!-- container -->
-
+		<div id="bodyWrap">
+			<div class="contnetsWrap">
+				<form action="" method="post">
+					<div id="contents">
+						<div class="cont_header">
+							<h1 class="h1_tit">회원 가입</h1>
+						</div>
+						<div class="cont_area">
+							<div class="mypage_sec">
+								<div class="member_info">
+									<div class="table_header">
+										<h3 class="h3_tit" style="text-align: left; background: url('#');">기본정보</h3>
+									</div>
+									<div class="table_col">
+										<table>
+											<colgroup>
+												<col style="width: 25%;">
+												<col>
+											</colgroup>
+											<tbody">
+												<tr class="input">
+													<th scope="row">이름</th>
+													<td>
+														<input type="text" placeholder="이름을 입력하시오" autocomplete="off" style="margin-left: -560px; width: 180px;">
+													</td>													
+												</tr>
+												<tr>
+													<th scope="row">아이디</th>
+													<td><input type="text" placeholder="아이디를 입력하시오" autocomplete="off" style="margin-left: -560px; width: 180px;"></td>													
+												</tr>
+												<tr>
+													<th scope="row">비밀번호</th>
+													<td><input type="text" placeholder="비밀번호를 입력하시오" autocomplete="off" style="margin-left: -560px; width: 180px;"></td>													
+												</tr>
+												<tr>
+													<th scope="row">비밀번호 확인</th>
+													<td><input type="text" placeholder="비밀번호를 입력하시오" autocomplete="off" style="margin-left: -560px; width: 180px;"></td>													
+												</tr>
+												<tr>
+													<th scope="row">이메일</th>
+													<td>
+														<div class="email_write" style="margin-left: -352px;">
+															<span class="input_txt w110" data-skin="form">
+																<input type="text" class="text small" placeholder="이메일 아이디를 입력하시오" data-format="email" autocomplete="off">
+															</span>
+															<span class="symbol">@</span>
+															<span class="input_txt w110">
+                                                                <input type="text" class="text small" title="이메일 도메인 입력" placeholder="이메일 도메인" data-format="email" name="email_addr2" id="email_addr2" value="naver.com" autocomplete="off">
+                                                            </span>
+                                                            <span class="select w100 hide" data-skin="form">
+	                                                            <select title="이메일 도메인 선택" data-control="emailSelector" name="email_addr_opt" id="email_addr_opt">
+		                                                            <option value="0">직접입력</option>
+		                                                            <option value="naver.com" selected="selected">네이버</option>
+		                                                            <option value="hanmail.net">한메일</option>
+		                                                            <option value="nate.com">네이트</option>
+		                                                            <option value="gmail.com">지메일</option>
+	                                                            </select>
+                                                            </span>
+                                                            <div class="select_wrap w100" style="background-color:rgb(235,235,228)">
+                                                            	<div class="item_seleced"> 
+                                                            		<a href="#naver.com" title="이메일 도메인 선택 목록 열기" data-title="이메일 도메인 선택" class="">네이버<span class="haze">선택됨</span></a>
+                                                           		</div>	
+                                                           		<div class="item_list_wrap ">
+	                                                          		<div class="item_list ui_scrollarea">
+	                                                          			<ul class="ui_content">
+	                                                          				<li>
+	                                                          					<a href="#0"><span>직접입력</span></a>
+	                                                         				</li>
+	                                                         				<li>
+	                                                         					<a href="#naver.com"><span>네이버</span></a>
+	                                                        				</li>
+	                                                        				<li>
+	                                                        					<a href="#hanmail.net"><span>한메일</span></a>
+	                                                        				</li>
+	                                                        				<li>
+	                                                        					<a href="#nate.com"><span>네이트</span></a>
+	                                                        				</li>
+	                                                        				<li>
+	                                                        					<a href="#gmail.com"><span>지메일</span></a>
+		                                                       				</li>
+		                                                       			</ul>
+		                                                       		</div>
+		                                                       		<div class="scroll ui_scrollbar">
+		                                                       			<span class="bg_top"></span>
+		                                                       			<span class="bg bg_mid" style="display: none;"></span>
+		                                                       			<span class="bg_btm"></span>
+		                                                       		</div>
+	                                                    	   	</div>
+                                                        	</div>
+														</div>
+													</td>		
+												</tr>
+												<tr>
+													<th scope="row">생년월일</th>
+													<td><input type="text" placeholder="날짜를 입력하시오" autocomplete="off" style="margin-left: -560px; width: 180px;"></td>													
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="table_header choice">
+										<h3 class="h3_tit" style="background: url('#'); text-align: left;">정보제공 동의여부</h3>
+									</div>
+									<div class="table_col">
+										<table>
+											<colgroup>
+												<col style="width:25%">
+												<col>
+											</colgroup>
+											<tbody>
+												<!-- CJ ONE 마케팅 동의-->
+												<tr>
+													<th scope="row">개인정보 수집 활용 동의</th>
+													<input type="hidden" name="rcvr_coopco" value="7000|0000">
+													<td data-handler="checkAll">
+														<strong class="msg_desc">포인트/이벤트/문화공연/상품 소식을 전해드립니다. (공지목적의 발송되는 메일은 제외)</strong>
+														<div class="chk_group" id="cj_agree">
+														
+															<!-- 전체동의 -->
+															<span class="check_box" data-skin="accept" data-checked-text="선택됨" data-unchecked-text="미선택됨">
+																<a href="#">
+																	<span class="haze">전체 동의<span>미선택됨</span></span>
+																</a><span class="hide"><span class="haze">전체 동의<span>선택불가</span></span></span>
+																<input type="checkbox" data-check-all="[data-handler='checkAll']" value="Y" id="mkt_rcv_all" name="mkt_rcv" class="chk">
+																<label class="label_check" for="mkt_rcv_all"><span class="ico"></span>전체 동의</label>
+															</span>
+															
+															<!-- Email -->
+															<span class="check_box" data-skin="accept" data-checked-text="선택됨" data-unchecked-text="미선택됨">
+																<a href="#">
+																	<span class="haze">이메일<span>미선택됨</span></span>
+																</a><span class="hide"><span class="haze">이메일<span>선택불가</span></span></span>																										
+																<input type="checkbox" class="chk" name="email_rcv_70000000" id="email_rcv_70000000" value="Y">
+																<label class="label_check" for="email_rcv_70000000"><span class="ico"></span>이메일</label>
+															</span>
+															
+															<!-- SMS -->
+															<span class="check_box" data-skin="accept" data-checked-text="선택됨" data-unchecked-text="미선택됨">
+																<a href="#">
+																	<span class="haze">SMS<span>미선택됨</span></span>
+																</a><span class="hide"><span class="haze">SMS<span>선택불가</span></span></span>
+																<input type="checkbox" class="chk" name="sms_rcv_70000000" id="sms_rcv_70000000" value="Y">															
+																<label class="label_check" for="sms_rcv_70000000"><span class="ico"></span>SMS</label>
+															</span>
+															
+															<!-- Phone -->
+															<span class="check_box" data-skin="accept" data-checked-text="선택됨" data-unchecked-text="미선택됨">
+																<a href="#">
+																	<span class="haze">휴대전화<span>미선택됨</span></span>
+																</a><span class="hide"><span class="haze">휴대전화<span>선택불가</span></span></span>
+																<input type="checkbox" class="chk" name="tm_rcv_70000000" id="tm_rcv_70000000" value="Y">	
+																<label class="label_check" for="tm_rcv_70000000"><span class="ico"></span>휴대전화</label>
+															</span>
+															
+															<!-- Push -->
+															
+														</div>
+														<div id="cj_marketing_agree" class="msg_desc hide">
+															<p>※ CJ ONE 마케팅정보 수신동의는 CJ ONE 개인정보 수집 및 활용동의(선택) 동의 시 가능합니다. </p>
+															<a href="#" class="link_txt uline" data-control="cj_gatherAgree"><span>개인정보 수집 및 활용동의 설정</span></a>
+														</div>												
+													</td>
+												</tr>
+			
+												<!-- 제휴 브랜드 마케팅 동의 -->
+												
+												
+												<!-- 현금영수증 발행 -->
+													
+											</tbody>
+										</table>
+									</div>									
+									<div class="btn_sec btn_center">
+										<button type="button" class="btn" id="btn_cancel">취소</button>
+										<button type="button" class="btn btn_em" id="btn_submit">수정</button>
+									</div>
+								</div>
+							</div>												
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 		<!-- E Contaniner -->
     	<!-- S Footer -->
 	    <footer>
